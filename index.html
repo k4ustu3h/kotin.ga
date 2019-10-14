@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<script src="head.js"></script>
+	<script src="dist/js/head.js"></script>
 	<meta charset='utf-8'>
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
@@ -11,11 +11,11 @@
 	<link rel="icon" href="favicon.ico">
 	<meta itemprop="name" content="mnmlurl">
 	<meta itemprop="description" content="Minimal URL is a modern URL shortener with support for custom alias">
-	<meta itemprop="image" content="icons/icon-192x192.png">
+	<meta itemprop="image" content="dist/images/icon-192x192.png">
 	<!-- See https://goo.gl/OOhYW5 -->
-	<link rel="manifest" href="manifest.json">
+	<link rel="manifest" href="dist/json/manifest.json">
 	<!-- See https://goo.gl/qRE0vM -->
-	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#ff0000">
 	<!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
 	<meta name="mobile-web-app-capable" content="yes">
 	<meta name="application-name" content="mnmlurl">
@@ -24,13 +24,13 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="white-translucent">
 	<meta name="apple-mobile-web-app-title" content="mnmlurl">
 	<!-- Homescreen icons -->
-	<link rel="apple-touch-icon" href="icons/icon-48x48.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="icons/icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="96x96" href="icons/icon-96x96.png">
-	<link rel="apple-touch-icon" sizes="144x144" href="icons/icon-144x144.png">
-	<link rel="apple-touch-icon" sizes="192x192" href="icons/icon-192x192.png">
+	<link rel="apple-touch-icon" href="dist/images/icon-48x48.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="dist/images/icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="96x96" href="dist/images/icon-96x96.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="dist/images/icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="192x192" href="dist/images/icon-192x192.png">
 	<!-- Tile icon for Windows 8 (144x144 + tile color) -->
-	<meta name="msapplication-TileImage" content="icons/icon-144x144.png">
+	<meta name="msapplication-TileImage" content="dist/images/icon-144x144.png">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-tap-highlight" content="no">
 	<!-- OpenGraph -->
@@ -39,7 +39,7 @@
 	<meta property="og:type" content="website">
 	<meta property="og:title" content="mnmlurl">
 	<meta property="og:description" content="Minimal URL is a modern URL shortener with support for custom alias">
-	<meta property="og:image" content="icons/icon-144x144.png">
+	<meta property="og:image" content="dist/images/icon-144x144.png">
 	<!-- Twitter -->
 	<meta name="twitter:card" content="summary">
 	<meta name="twitter:site" content="@liyasthomas">
@@ -47,14 +47,14 @@
 	<meta name="twitter:url" content="https://url.k4ustu3h.cf">
 	<meta name="twitter:title" content="mnmlurl">
 	<meta name="twitter:description" content="Minimal URL is a modern URL shortener with support for custom alias">
-	<meta name="twitter:image" content="icons/icon-144x144.png">
+	<meta name="twitter:image" content="dist/images/icon-144x144.png">
 	<!-- Web Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Poppins:700&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="dist/css/index.css">
 	<script>
 		if ('serviceWorker' in navigator) {
 			window.addEventListener('load', function() {
-				navigator.serviceWorker.register('sw.js').then(function(registration) {
+				navigator.serviceWorker.register('dist/js/sw.js').then(function(registration) {
 					console.log('ServiceWorker registration successful with scope: ', registration.scope);
 				}).catch(function(err) {
 					console.log('ServiceWorker registration failed: ', err);
@@ -84,24 +84,24 @@
 		<div class="flex"></div>
 		<footer>
 			<a href="manage">
-				<img src="icons/manage.svg" alt="logo" style="height: 24px; margin-right: 8px;">Manage URLs
+				<img src="dist/images/manage.svg" alt="logo" style="height: 24px; margin-right: 8px;">Manage URLs
 			</a>
 			<a href="https://github.com/liyasthomas/mnmlurl-extension" target="_blank" rel="noopener">
-				<img src="icons/extension.svg" alt="GitHub" style="height: 24px; margin-right: 8px;">Get browser extension
+				<img src="dist/images/extension.svg" alt="GitHub" style="height: 24px; margin-right: 8px;">Get browser extension
 			</a>
 			<a href="https://github.com/liyasthomas/mnmlurl" target="_blank" rel="noopener">
-				<img src="icons/github.svg" alt="GitHub" style="height: 24px; margin-right: 8px;">GitHub
+				<img src="dist/images/github.svg" alt="GitHub" style="height: 24px; margin-right: 8px;">GitHub
 			</a>
 			<button id="installPWA" onclick="installPWA()" style="padding: 16px;">
-				<img src="icons/pwalogo.svg" alt="PWA" style="height: 16px;">
+				<img src="dist/images/pwalogo.svg" alt="PWA" style="height: 16px;">
 			</button>
 			<div class="flex"></div>
 			<a href="https://url.k4ustu3h.cf">
-				<img src="icons/logo.svg" alt="logo" style="height: 24px; margin-right: 8px;">&copy;2019
+				<img src="dist/images/logo.svg" alt="logo" style="height: 24px; margin-right: 8px;">&copy;2019
 			</a>
 		</footer>
 	</main>
-	<script src="index.js"></script>
+	<script src="dist/js/index.js"></script>
 	<script>
 		let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes'
 		if (window.matchMedia('(display-mode: standalone)').matches) {
