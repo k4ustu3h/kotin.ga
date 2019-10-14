@@ -1,19 +1,10 @@
-```
-When I wrote this, only God and I understood what I was doing. Now, only God knows.
-```
-<div align="center">
-  <a href="https://liyas-thomas.firebaseapp.com"><img src="https://raw.githubusercontent.com/liyasthomas/templates/master/assets/logo.gif" alt="Liyas Thomas" width="200"></a>
-  <br>
-  <h1>Liyas Thomas</h1>
-  <sub>Built with ❤︎ by
-  <a href="https://github.com/liyasthomas">liyasthomas</a> and
-  <a href="https://github.com/liyasthomas/mnmlurl/graphs/contributors">contributors</a>
-	</sub>
-</div>
-
----
-
-[![Build Status](https://travis-ci.org/liyasthomas/mnmlurl.svg?branch=master)](https://travis-ci.org/liyasthomas/mnmlurl) [![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest) [![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip) [![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/blob/master/LICENSE) [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/mnmlurl/issues) [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
+[![Build Status](https://travis-ci.org/k4ustu3h/url-shortener.svg?branch=master)](https://travis-ci.org/k4ustu3h/url-shortener)
+[![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest) 
+[![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip) 
+[![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/blob/master/LICENSE) 
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/mnmlurl/issues) 
+[![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) 
+[![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
 
 # <img src="src/icons/icon-48x48.png" alt="mnmlurl" width="32"> mnmlurl
 
