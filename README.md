@@ -6,7 +6,7 @@
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) 
 [![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
 
-# <img src="src/icons/icon-48x48.png" alt="mnmlurl" width="32"> mnmlurl
+# <img src="icons/icon-48x48.png" alt="mnmlurl" width="32"> mnmlurl
 
 ### :link: Minimal URL is a modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
 
