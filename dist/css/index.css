@@ -8,7 +8,7 @@
 
 body {
   margin: 0;
-  color: #333;
+  color: #000000;
   font-size: 64px;
   animation: fadein .2s;
   -webkit-tap-highlight-color: transparent;
