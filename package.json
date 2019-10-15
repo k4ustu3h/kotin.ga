@@ -1,7 +1,7 @@
 {
-  "name": "mnmlurl",
+  "name": "kotinga",
   "version": "2.5.0",
-  "description": "Minimal URL is a modern URL shortener with support for custom alias",
+  "description": "Kotinga is a modern URL shortener with support for custom alias",
   "main": "dist/js/index.js",
   "scripts":
   {

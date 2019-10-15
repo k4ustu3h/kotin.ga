@@ -6,22 +6,22 @@
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/27ba32aa62be4818a663fe1844b8b65c)](https://www.codacy.com/manual/k4ustu3h/url-shortener?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/url-shortener&amp;utm_campaign=Badge_Grade)
 
-# <img src="icons/icon-48x48.png" alt="mnmlurl" width="32"> mnmlurl
+# <img src="dist/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
-### :link: Minimal URL is a modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
+### :link: Kotinga is a modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
 
 ### Follow this tutorial to create your own URL shortener with support for custom alias & can be hosted even in GitHub pages: [How to create your own custom URL shortener in 10 minutes for free & deploy to GitHub 🚀](https://dev.to/liyasthomas/how-to-create-your-own-custom-url-shortener-in-10-minutes-for-free-deploy-to-github-2k6h)
 
 <div align="center">
   <br>
-  <img src="src/icons/screely.png" alt="mnmlurl" width="100%">
-  <img src="src/icons/screely2.png" alt="mnmlurl" width="100%">
+  <img src="src/dist/images/screely.png" alt="kotinga" width="100%">
+  <img src="src/dist/images/screely2.png" alt="kotinga" width="100%">
   <br>
 </div>
 
 ### Features :sparkles:
 
-:heart_eyes: **URL shortning made simple**: mnmlurl uses [jsonstore.io](https://www.jsonstore.io) to  store data on an endpoint JSON file using HTTPS requests. It works on any url.
+:heart_eyes: **URL shortning made simple**: kotinga uses [jsonstore.io](https://www.jsonstore.io) to  store data on an endpoint JSON file using HTTPS requests. It works on any url.
 
 :heart: **No server side logging**: Your privacy is important for us. We never log, collect or prompt to sell your data to anyone.
 
@@ -31,19 +31,19 @@
 
 :alembic: **Manage URLs**: Delete already created alias to update/create new URLs.
 
-:zap: **Performance**: mnmlurl is a thin web app on top of HTML, CSS and JavaScript. Being a Progressive web app, mnmlurl offers lightning fast loading and offline support via workbox and service worker.
+:zap: **Performance**: kotinga is a thin web app on top of HTML, CSS and JavaScript. Being a Progressive web app, kotinga offers lightning fast loading and offline support via workbox and service worker.
 
 :information_desk_person: **Browser extension**:  Get mnmlurl [Chrome browser extension](https://github.com/liyasthomas/mnmlurl-extension)
 
-**Minimal URL can be hosted on any website hosting services like GitHub/GitLab pages, Firebase/Heroku hosting, yoursite.com, etc. For hosting in such custom domains, Its advised to `npm run-scripts build` and upload `output` folder. Hosting on GitHub pages was just for proof of concept.**
+**Kotinga can be hosted on any website hosting services like GitHub/GitLab pages, Firebase/Heroku hosting, yoursite.com, etc. For hosting in such custom domains, Its advised to `npm run-scripts build` and upload `output` folder. Hosting on GitHub pages was just for proof of concept.**
 
-<span style="color:red;">**IMPORTANT: Minimal URL is an experimental project. Don't shorten sensitive contents/URLs with it. jsonstore.io endpoints are always public making shortened URLs visible for everyone.**</span>
+<span style="color:red;">**IMPORTANT: Kotinga is an experimental project. Don't shorten sensitive contents/URLs with it. jsonstore.io endpoints are always public making shortened URLs visible for everyone.**</span>
 
 ---
 
 ## Demo
 
-[mnmlurl.ml](https://mnmlurl.ml) _(production)_
+[mnmlurl.ml](https://kotin.ga) _(production)_
 
 [liyasthomas.github.io/mnmlurl/src](https://liyasthomas.github.io/mnmlurl/src) _(development)_
 
