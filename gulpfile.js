@@ -9,53 +9,59 @@ let del = require('del')
 let zip = require('gulp-zip')
 let source = require('vinyl-source-stream')
 const compress = () => gulp
-	.src('output/*')
-	.pipe(zip('package.zip'))
-	.pipe(gulp.dest('output'))
+  .src('output/*')
+  .pipe(zip('package.zip'))
+  .pipe(gulp.dest('output'))
 const pre_js = () => gulp
-	.src(['src/index.js', 'src/manage.js', 'src/head.js'])
-	.pipe(babel({
-		plugins: ['@babel/transform-runtime'],
-		presets: ['@babel/preset-env']
-	}))
-	.pipe(gulp.dest('comp'))
+  .src(['src/index.js', 'src/manage.js', 'src/head.js'])
+  .pipe(babel(
+  {
+    plugins: ['@babel/transform-runtime'],
+    presets: ['@babel/preset-env']
+  }))
+  .pipe(gulp.dest('comp'))
 const m_html = () => gulp
-	.src(['src/index.html', 'src/manage.html', 'src/404.html'])
-	.pipe(htmlmin({
-		collapseWhitespace: true
-	}))
-	.pipe(gulp.dest('output'))
-const m_css = () => {
-	const plugins = [
+  .src(['src/index.html', 'src/manage.html', 'src/404.html'])
+  .pipe(htmlmin(
+  {
+    collapseWhitespace: true
+  }))
+  .pipe(gulp.dest('output'))
+const m_css = () =>
+{
+  const plugins = [
     cssnano()
   ]
-	return gulp
-		.src('src/index.css')
-		.pipe(postcss(plugins))
-		.pipe(gulp.dest('output'))
+  return gulp
+    .src('src/index.css')
+    .pipe(postcss(plugins))
+    .pipe(gulp.dest('output'))
 }
 const m_js = () => gulp
-	.src(['comp/index.js', 'comp/manage.js', 'comp/head.js'])
-	.pipe(uglify({
-		compress: {
-			unused: false
-		}
-	}))
-	.pipe(gulp.dest('output'))
+  .src(['comp/index.js', 'comp/manage.js', 'comp/head.js'])
+  .pipe(uglify(
+  {
+    compress:
+    {
+      unused: false
+    }
+  }))
+  .pipe(gulp.dest('output'))
 const copy_extras = () => gulp
-	.src(['src/manifest.json', 'src/favicon.ico', 'src/icons/*', 'src/sw.js'], {
-		base: 'src'
-	})
-	.pipe(gulp.dest('output'))
+  .src(['src/manifest.json', 'src/favicon.ico', 'src/icons/*', 'src/sw.js'],
+  {
+    base: 'src'
+  })
+  .pipe(gulp.dest('output'))
 const clean = () => del(['./comp'])
 const bundleindex = () => browserify(['output/index.js'])
-	.bundle()
-	.pipe(source('index.js'))
-	.pipe(gulp.dest('output'))
+  .bundle()
+  .pipe(source('index.js'))
+  .pipe(gulp.dest('output'))
 const bundlemanage = () => browserify(['output/manage.js'])
-	.bundle()
-	.pipe(source('manage.js'))
-	.pipe(gulp.dest('output'))
+  .bundle()
+  .pipe(source('manage.js'))
+  .pipe(gulp.dest('output'))
 gulp.task('html', m_html)
 gulp.task('css', m_css)
 gulp.task('js', m_js)
@@ -66,10 +72,10 @@ gulp.task('compress', compress)
 gulp.task('bundleindex', bundleindex)
 gulp.task('bundlemanage', bundlemanage)
 gulp.task(
-	'build',
-	gulp.series('html', 'css', 'pre_js', 'js', 'bundleindex', 'bundlemanage', 'copy_extras', 'clean')
+  'build',
+  gulp.series('html', 'css', 'pre_js', 'js', 'bundleindex', 'bundlemanage', 'copy_extras', 'clean')
 )
 gulp.task(
-	'packit',
-	gulp.series('build', 'compress')
+  'packit',
+  gulp.series('build', 'compress')
 )

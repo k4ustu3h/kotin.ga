@@ -3,28 +3,33 @@
   "version": "2.5.0",
   "description": "Minimal URL is a modern URL shortener with support for custom alias",
   "main": "index.js",
-  "scripts": {
+  "scripts":
+  {
     "build": "gulp build",
     "packit": "gulp packit",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
-  "repository": {
+  "repository":
+  {
     "type": "git",
     "url": "https://github.com/liyasthomas/mnmlurl.git"
   },
-  "keywords": [
+  "keywords":
+  [
     "url",
     "url-shortener",
     "free"
   ],
   "author": "Liyas Thomas",
   "license": "MIT",
-  "bugs": {
+  "bugs":
+  {
     "url": "https://github.com/liyasthomas/mnmlurl/issues"
   },
   "homepage": "https://github.com/liyasthomas/mnmlurl#readme",
-  "dependencies": {
+  "dependencies":
+  {
     "@babel/preset-env": "^7.6.3",
     "@babel/runtime": "^7.6.3",
     "browserify": "^16.5.0",
@@ -39,7 +44,8 @@
     "vinyl-source-stream": "^2.0.0",
     "snyk": "^1.234.0"
   },
-  "devDependencies": {
+  "devDependencies":
+  {
     "@babel/core": "^7.6.3",
     "@babel/plugin-transform-runtime": "^7.6.2"
   },
