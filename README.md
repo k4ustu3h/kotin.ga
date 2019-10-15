@@ -1,10 +1,10 @@
 [![Build Status](https://travis-ci.org/k4ustu3h/url-shortener.svg?branch=master)](https://travis-ci.org/k4ustu3h/url-shortener)
-[![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest) 
-[![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip) 
-[![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/blob/master/LICENSE) 
-[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/mnmlurl/issues) 
-[![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com) 
-[![Donate](https://img.shields.io/badge/$-donate-ff69b4.svg)](https://www.paypal.me/liyascthomas)
+[![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest)
+[![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip)
+[![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/blob/master/LICENSE)
+[![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/mnmlurl/issues)
+[![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/27ba32aa62be4818a663fe1844b8b65c)](https://www.codacy.com/manual/k4ustu3h/url-shortener?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/url-shortener&amp;utm_campaign=Badge_Grade)
 
 # <img src="icons/icon-48x48.png" alt="mnmlurl" width="32"> mnmlurl
 
