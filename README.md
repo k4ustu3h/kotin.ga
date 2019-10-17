@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/k4ustu3h/url-shortener.svg?branch=master)](https://travis-ci.org/k4ustu3h/url-shortener)
+[![Build Status](https://travis-ci.org/k4ustu3h/kotin.ga.svg?branch=master)](https://travis-ci.org/k4ustu3h/kotin.ga)
 [![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest)
 [![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip)
 [![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/blob/master/LICENSE)
