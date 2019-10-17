@@ -7,8 +7,9 @@
 }
 
 body {
+  background-color: black;
   margin: 0;
-  color: #333;
+  color: #000000;
   font-size: 64px;
   animation: fadein .2s;
   -webkit-tap-highlight-color: transparent;
@@ -42,6 +43,7 @@ a {
 }
 
 footer {
+  color: #757575;
   display: flex;
   padding: 16px;
   font-size: 18px;
@@ -53,13 +55,15 @@ footer {
 }
 
 .form {
+  background-color: black;
   width: 100%;
 }
 
 input {
+  background-color: black;
   padding: 16px 32px;
   width: 100%;
-  color: inherit;
+  color: #757575;
   font-size: inherit;
 }
 
@@ -69,7 +73,7 @@ input {
 
 ::selection {
   background-color: #000;
-  color: #fff;
+  color: #000;
 }
 
 #erbox {
