@@ -1,10 +1,10 @@
-[![Build Status](https://travis-ci.org/k4ustu3h/url-shortener.svg?branch=master)](https://travis-ci.org/k4ustu3h/url-shortener)
+[![Build Status](https://travis-ci.org/k4ustu3h/kotin.ga.svg?branch=master)](https://travis-ci.org/k4ustu3h/kotin.ga)
 [![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest)
 [![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip)
 [![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/blob/master/LICENSE)
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/liyasthomas/mnmlurl/issues)
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://liyas-thomas.firebaseapp.com)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/27ba32aa62be4818a663fe1844b8b65c)](https://www.codacy.com/manual/k4ustu3h/url-shortener?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/url-shortener&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/91a6faae94c2402da74967e5004d48f0)](https://www.codacy.com/manual/k4ustu3h/kotin.ga?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/kotin.ga&amp;utm_campaign=Badge_Grade)
 
 # <img src="dist/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
@@ -38,14 +38,6 @@
 **Kotinga can be hosted on any website hosting services like GitHub/GitLab pages, Firebase/Heroku hosting, yoursite.com, etc. For hosting in such custom domains, Its advised to `npm run-scripts build` and upload `output` folder. Hosting on GitHub pages was just for proof of concept.**
 
 <span style="color:red;">**IMPORTANT: Kotinga is an experimental project. Don't shorten sensitive contents/URLs with it. jsonstore.io endpoints are always public making shortened URLs visible for everyone.**</span>
-
----
-
-## Demo
-
-[mnmlurl.ml](https://kotin.ga) _(production)_
-
-[liyasthomas.github.io/mnmlurl/src](https://liyasthomas.github.io/mnmlurl/src) _(development)_
 
 ---
 
