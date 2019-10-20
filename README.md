@@ -14,8 +14,8 @@
 
 <div align="center">
   <br>
-  <img src="src/dist/images/screely.png" alt="kotinga" width="100%">
-  <img src="src/dist/images/screely2.png" alt="kotinga" width="100%">
+  <img src="dist/images/screely.png" alt="kotinga" width="100%">
+  <img src="dist/images/screely2.png" alt="kotinga" width="100%">
   <br>
 </div>
 
