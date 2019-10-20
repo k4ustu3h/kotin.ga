@@ -10,24 +10,25 @@
 /*Global Variables*/
 
 :root {
-  --primary-color: #009bef;
-  --secondary-color: #000;
-  --font-color: #757575;
-  --bg-color: #fff;
-  --heading-color: #757575;
-  --pwa-color: #3d3d3d;
-}
-
-
-/*Dark Mode Variables*/
-
-[data-theme="dark"] {
   --primary-color: #990000;
   --secondary-color: #fff;
   --font-color: #bdbdbd;
   --bg-color: #000;
   --heading-color: #bdbdbd;
   --pwa-color: #fff;
+}
+
+
+/*Dark Mode Variables*/
+
+[data-theme="dark"] {
+
+  --primary-color: #009bef;
+  --secondary-color: #000;
+  --font-color: #757575;
+  --bg-color: #fff;
+  --heading-color: #757575;
+  --pwa-color: #3d3d3d;
 }
 
 body {
