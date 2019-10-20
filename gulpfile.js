@@ -38,7 +38,7 @@ const m_css = () =>
     .pipe(gulp.dest('output'))
 }
 const m_js = () => gulp
-  .src(['dist/js/index.js', 'dist/js/manage.js', 'dist/js/head.js'])
+  .src(['comp/index.js', 'comp/manage.js', 'comp/head.js'])
   .pipe(uglify(
   {
     compress:
@@ -48,7 +48,7 @@ const m_js = () => gulp
   }))
   .pipe(gulp.dest('output'))
 const copy_extras = () => gulp
-  .src(['dist/json/manifest.json', 'src/favicon.ico', 'src/icons/*', 'dist/js/sw.js'],
+  .src(['dist/json/manifest.json', 'dist/images/favicon.ico', 'dist/images/*', 'dist/js/sw.js'],
   {
     base: 'src'
   })
