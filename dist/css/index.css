@@ -21,7 +21,7 @@
 
 /*Dark Mode Variables*/
 
-[data-theme="dark"] {
+[data-theme="light"] {
 
   --primary-color: #009bef;
   --secondary-color: #000;
