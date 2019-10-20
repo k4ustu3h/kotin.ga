@@ -13,7 +13,7 @@ const compress = () => gulp
   .pipe(zip('package.zip'))
   .pipe(gulp.dest('output'))
 const pre_js = () => gulp
-  .src(['src/index.js', 'src/manage.js', 'src/head.js'])
+  .src(['dist/js/index.js', 'dist/js/manage.js', 'dist/js/head.js'])
   .pipe(babel(
   {
     plugins: ['@babel/transform-runtime'],
@@ -21,7 +21,7 @@ const pre_js = () => gulp
   }))
   .pipe(gulp.dest('comp'))
 const m_html = () => gulp
-  .src(['src/index.html', 'src/manage.html', 'src/404.html'])
+  .src(['index.html', 'manage.html', '404.html'])
   .pipe(htmlmin(
   {
     collapseWhitespace: true
@@ -33,12 +33,12 @@ const m_css = () =>
     cssnano()
   ]
   return gulp
-    .src('src/index.css')
+    .src('dist/css/index.css')
     .pipe(postcss(plugins))
     .pipe(gulp.dest('output'))
 }
 const m_js = () => gulp
-  .src(['comp/index.js', 'comp/manage.js', 'comp/head.js'])
+  .src(['dist/js/index.js', 'dist/js/manage.js', 'dist/js/head.js'])
   .pipe(uglify(
   {
     compress:
@@ -48,19 +48,19 @@ const m_js = () => gulp
   }))
   .pipe(gulp.dest('output'))
 const copy_extras = () => gulp
-  .src(['src/manifest.json', 'src/favicon.ico', 'src/icons/*', 'src/sw.js'],
+  .src(['dist/json/manifest.json', 'src/favicon.ico', 'src/icons/*', 'dist/js/sw.js'],
   {
     base: 'src'
   })
   .pipe(gulp.dest('output'))
 const clean = () => del(['./comp'])
-const bundleindex = () => browserify(['output/index.js'])
+const bundleindex = () => browserify(['dist/js/output/index.js'])
   .bundle()
-  .pipe(source('index.js'))
+  .pipe(source('dist/js/index.js'))
   .pipe(gulp.dest('output'))
-const bundlemanage = () => browserify(['output/manage.js'])
+const bundlemanage = () => browserify(['dist/js/output/manage.js'])
   .bundle()
-  .pipe(source('manage.js'))
+  .pipe(source('dist/js/manage.js'))
   .pipe(gulp.dest('output'))
 gulp.task('html', m_html)
 gulp.task('css', m_css)
