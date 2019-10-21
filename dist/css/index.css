@@ -19,7 +19,7 @@
 }
 
 
-/*Dark Mode Variables*/
+/*Light Mode Variables*/
 
 [data-theme="light"] {
 
@@ -61,7 +61,7 @@ a {
   display: inline-flex;
   margin: 0 16px;
   padding: 16px 0;
-  color: var(--secondary-color);
+  color: var(--primary-color);
   text-decoration: none;
   align-items: center;
 }
