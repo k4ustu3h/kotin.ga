@@ -16,6 +16,7 @@
   --bg-color: #000;
   --heading-color: #bdbdbd;
   --pwa-color: #fff;
+  --gradient: linear-gradient(270deg, #ff0000, #c471ed, #009bef);
 }
 
 
@@ -28,6 +29,7 @@
   --bg-color: #fff;
   --heading-color: #757575;
   --pwa-color: #3d3d3d;
+  --gradient: linear-gradient(270deg, #009bef, #c471ed, #ff0000);
 }
 
 body {
@@ -130,12 +132,26 @@ input {
 
 button {
   padding: 16px 32px;
-  background: linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
+  background: var(--gradient);
+  background-size: 300% 300%;
+  animation: primary-button 8s ease infinite;
   -webkit-background-clip: text;
   text-align: left;
   font-size: inherit;
   cursor: pointer;
   -webkit-text-fill-color: transparent;
+}
+
+@keyframes primary-button {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @media all and (max-width: 720px) {
