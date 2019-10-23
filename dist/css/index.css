@@ -22,7 +22,6 @@
 /*Light Mode Variables*/
 
 [data-theme="light"] {
-
   --primary-color: #009bef;
   --secondary-color: #000;
   --font-color: #757575;
@@ -148,11 +147,12 @@ button {
   }
 }
 
+
 /*Simple css to style it like a toggle switch*/
+
 .theme-switch-wrapper {
   display: flex;
   align-items: center;
-
   em {
     margin-left: 10px;
     font-size: 1rem;
@@ -182,14 +182,15 @@ button {
 }
 
 .slider:before {
-  background-color: #fff;
+  left: 12px;
   bottom: 4px;
-  content: "";
   height: 26px;
-  left: 4px;
+  width: 26px;
+  content: "";
   position: absolute;
   transition: .4s;
-  width: 26px;
+  box-shadow: 5px 5px 0 0 #fff;
+  transform: rotate(135deg);
 }
 
 input:checked+.slider {
@@ -197,6 +198,12 @@ input:checked+.slider {
 }
 
 input:checked+.slider:before {
+  left: 4px;
+  bottom: 4px;
+  background-color: #fff;
+  height: 26px;
+  width: 26px;
+  box-shadow: 0px 0px 0 0 #fff;
   transform: translateX(26px);
 }
 
