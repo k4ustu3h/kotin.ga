@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/k4ustu3h/kotin.ga.svg?branch=master)](https://travis-ci.org/k4ustu3h/kotin.ga)
 [![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest)
-[![repo size](https://img.shields.io/github/repo-size/liyasthomas/mnmlurl.svg)](https://github.com/liyasthomas/mnmlurl/archive/master.zip)
 [![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://kotin.ga)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/91a6faae94c2402da74967e5004d48f0)](https://www.codacy.com/manual/k4ustu3h/kotin.ga?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/kotin.ga&amp;utm_campaign=Badge_Grade)
