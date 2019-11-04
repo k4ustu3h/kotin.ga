@@ -41,9 +41,9 @@ workbox.routing.registerRoute(
   })
 );
 workbox.precaching.precacheAndRoute([
-  '/dist/css/index.css',
-  '/dist/js/index.js',
-  '/dist/js/manage.js',
+  '/index.css',
+  '/index.js',
+  '/manage.js',
   {
     url: '/index.html',
     revision: '383676'
@@ -57,8 +57,8 @@ self.addEventListener('install', function (event)
 {
   var now = Date.now();
   var urlsToPrefetch = [
-    '/index.html',
-    '/manage.html'
+    'index.html',
+    'manage.html'
   ];
   // All of these logging statements should be visible via the "Inspect" interface
   // for the relevant SW accessed via chrome://serviceworker-internals
