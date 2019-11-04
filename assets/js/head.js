@@ -1,5 +1,5 @@
 "use strict";
-var endpoint = "https://www.jsonstore.io/6b6e3cd07f3aaecd8df25ab95875eb2462f00a7614f7205c2d5dc5229896ea98",
+var endpoint = "https://www.jsonstore.io/98090d5a2f0e65870c1b1d4044419ad461181ac75909e5420d9893f7872fe65a",
   ebox = document.getElementById("erbox"),
   fetchJSON = function e(t)
   {
