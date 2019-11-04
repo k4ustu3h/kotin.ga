@@ -5,14 +5,14 @@
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://kotin.ga)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/91a6faae94c2402da74967e5004d48f0)](https://www.codacy.com/manual/k4ustu3h/kotin.ga?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/kotin.ga&amp;utm_campaign=Badge_Grade)
 
-# <img src="dist/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
+# <img src="assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
 ### :link: Kotinga is a fork of the modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
 
 <div align="center">
   <br>
-  <img src="dist/images/screely.png" alt="kotinga" width="100%">
-  <img src="dist/images/screely2.png" alt="kotinga" width="100%">
+  <img src="assets/images/screely.png" alt="kotinga" width="100%">
+  <img src="assets/images/screely2.png" alt="kotinga" width="100%">
   <br>
 </div>
 
