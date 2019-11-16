@@ -12,7 +12,7 @@
     <meta itemprop="description" content="Kotinga is a modern URL shortener with support for custom alias">
     <meta itemprop="image" content="assets/images/icon-192x192.png">
     <!-- See https://goo.gl/OOhYW5 -->
-    <link rel="manifest" href="assets/json/manifest.json">
+    <link rel="manifest" href="manifest.json">
     <!-- See https://goo.gl/qRE0vM -->
     <meta name="theme-color" content="#ff0000">
     <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
@@ -50,18 +50,7 @@
     <!-- Web Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Asap:700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/index.css">
-    <script>
-      if ('serviceWorker' in navigator) {
-      	window.addEventListener('load', function() {
-      		navigator.serviceWorker.register('/assets/js/sw.js').then(function(registration) {
-      			console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      		}).catch(function(err) {
-      			console.log('ServiceWorker registration failed: ', err);
-      		});
-      	});
-      }
 
-    </script>
   </head>
   <body>
     <main class="main">
@@ -128,45 +117,52 @@
     </main>
     <script src="assets/js/index.js"></script>
     <script>
-      let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes'
-      if (window.matchMedia('(display-mode: standalone)').matches) {
-      	localStorage.setItem('pwaInstalled', 'yes')
-      	pwaInstalled = true
-      }
-      if (window.navigator.standalone === true) {
-      	localStorage.setItem('pwaInstalled', 'yes')
-      	pwaInstalled = true
-      }
-      if (pwaInstalled) {
-      	document.getElementById('installPWA').style.display = 'none'
-      } else {
-      	document.getElementById('installPWA').style.display = 'block'
-      }
-      let deferredPrompt = null
-      window.addEventListener('beforeinstallprompt', (e) => {
-      	deferredPrompt = e
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+      navigator.serviceWorker.register('/sw.js');
+    });
+  }
+</script>
+<script>
+  let pwaInstalled = localStorage.getItem('pwaInstalled') == 'yes'
+  if (window.matchMedia('(display-mode: standalone)').matches) {
+    localStorage.setItem('pwaInstalled', 'yes')
+    pwaInstalled = true
+  }
+  if (window.navigator.standalone === true) {
+    localStorage.setItem('pwaInstalled', 'yes')
+    pwaInstalled = true
+  }
+  if (pwaInstalled) {
+    document.getElementById('installPWA').style.display = 'none'
+  } else {
+    document.getElementById('installPWA').style.display = 'block'
+  }
+  let deferredPrompt = null
+  window.addEventListener('beforeinstallprompt', (e) => {
+    deferredPrompt = e
+  })
+  async function installPWA() {
+    if (deferredPrompt) {
+      deferredPrompt.prompt()
+      deferredPrompt.userChoice.then(({
+        outcome
+      }) => {
+        if (outcome === 'accepted') {
+          console.log('Your PWA has been installed')
+        } else {
+          console.log('User chose to not install your PWA')
+        }
+        deferredPrompt = null
       })
-      async function installPWA() {
-      	if (deferredPrompt) {
-      		deferredPrompt.prompt()
-      		deferredPrompt.userChoice.then(({
-      			outcome
-      		}) => {
-      			if (outcome === 'accepted') {
-      				console.log('Your PWA has been installed')
-      			} else {
-      				console.log('User chose to not install your PWA')
-      			}
-      			deferredPrompt = null
-      		})
-      	}
-      }
-      window.addEventListener('appinstalled', (evt) => {
-      	localStorage.setItem('pwaInstalled', 'yes')
-      	pwaInstalled = true
-      	document.getElementById('installPWA').style.display = 'none'
-      })
+    }
+  }
+  window.addEventListener('appinstalled', (evt) => {
+    localStorage.setItem('pwaInstalled', 'yes')
+    pwaInstalled = true
+    document.getElementById('installPWA').style.display = 'none'
+  })
 
-    </script>
+</script>
   </body>
 </html>
