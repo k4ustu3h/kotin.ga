@@ -1,7 +1,7 @@
 [![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg)](https://github.com/liyasthomas/mnmlurl/releases/latest)
 [![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
 [![Website](https://img.shields.io/website-up-down-green-red/https/shields.io.svg?label=website)](https://kotin.ga)
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/91a6faae94c2402da74967e5004d48f0)](https://www.codacy.com/manual/k4ustu3h/kotin.ga?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=k4ustu3h/kotin.ga&amp;utm_campaign=Badge_Grade)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/91a6faae94c2402da74967e5004d48f0)](https://www.codacy.com/manual/k4ustu3h/kotin.ga?utm_source=github.com&utm_medium=referral&utm_content=k4ustu3h/kotin.ga&utm_campaign=Badge_Grade)
 
 # <img src="assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
@@ -32,46 +32,49 @@
 
 <span style="color:red;">**IMPORTANT: Kotinga is an experimental project. Don't shorten sensitive contents/URLs with it. jsonstore.io endpoints are always public making shortened URLs visible for everyone.**</span>
 
----
+* * *
 
 ## Built with
 
-* HTML - For the web framework
-* CSS - For styling components
-* **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
+-   HTML - For the web framework
+-   CSS - For styling components
+-   **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
 
----
+* * *
 
 ## Versioning
 
 This project is developed by [Liyas Thomas](https://github.com/liyasthomas) using the [Semantic Versioning specification](https://semver.org). For the versions available, see the [releases on this repository](https://github.com/liyasthomas/mnmlurl/releases).
 
----
+* * *
 
 ## Authors
 
 ### Lead Developers
-* [**Liyas Thomas**](https://github.com/liyasthomas) - *Author*
+
+-   [**Liyas Thomas**](https://github.com/liyasthomas) - _Author_
 
 ### Testing and Debugging
-* [Liyas Thomas](https://github.com/liyasthomas)
+
+-   [Liyas Thomas](https://github.com/liyasthomas)
 
 ### Contributors
-* [Contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors)
+
+-   [Contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors)
 
 See also the list of [contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors) who participated in this project.
 
----
+* * *
 
 ## License
 
 This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
 
----
+* * *
 
 ## Acknowledgments
 
-* Hat tip to anyone who's code was used
-* Inspirations:
-	* [Glitch](https://glitch.com)
-	* [tiny.cc](https://tiny.cc)
+-   Hat tip to anyone who's code was used
+-   Inspirations:
+    		_ [Glitch](https://glitch.com)
+    		_ [tiny.cc](https://tiny.cc)

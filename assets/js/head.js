@@ -4,10 +4,10 @@ var endpoint = "https://www.jsonstore.io/98090d5a2f0e65870c1b1d4044419ad461181ac
   fetchJSON = function e(t)
   {
     var a = new XMLHttpRequest;
-    return a.open("GET", t, !1), a.onreadystatechange = function (e)
+    return a.open("GET", t, !1), a.onreadystatechange = function(e)
     {
       4 === a.readyState && (200 === a.status || (ebox.style.display = "block", ebox.innerHTML = "network seems to be offline"))
-    }, a.onerror = function ()
+    }, a.onerror = function()
     {
       ebox.style.display = "block", ebox.innerHTML = "network error"
     }, a.send(), a.responseText

@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title></title>
-    <style>
+
+<head>
+  <title></title>
+  <style>
     html,
     body {
       height: 100%;
@@ -27,11 +28,15 @@
       height: auto;
     }
   </style>
-    <link href="https://fonts.googleapis.com/css?family=Asap&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <canvas width="256" height="512" id="game"></canvas>
-    <script>
+  <link href="https://fonts.googleapis.com/css?family=Asap&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+  <canvas width="256"
+          height="512"
+          id="game"></canvas>
+  <script>
     // https://tetris.fandom.com/wiki/Tetris_Guideline
     // get a random integer between the range of [min,max]
     // @see https://stackoverflow.com/a/1527820/2124254
@@ -273,7 +278,7 @@
       }
     }
     // listen to keyboard events to move the active tetromino
-    document.addEventListener('keydown', function (e)
+    document.addEventListener('keydown', function(e)
     {
       if (gameOver) return;
       // left and right arrow keys (move)
@@ -316,7 +321,7 @@
 
     var keys = {};
     window.addEventListener("keydown",
-      function (e)
+      function(e)
       {
         keys[e.keyCode] = true;
         switch (e.keyCode)
@@ -334,11 +339,12 @@
       },
       false);
     window.addEventListener('keyup',
-      function (e)
+      function(e)
       {
         keys[e.keyCode] = false;
       },
       false);
-    </script>
-  </body>
+  </script>
+</body>
+
 </html>
