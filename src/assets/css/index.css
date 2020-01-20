@@ -3,27 +3,27 @@
   outline: 0;
   border: 0;
   font-weight: 700;
-  font-family: Poppins, Roboto, Noto, sans-serif
+  font-family: Poppins, Roboto, Noto, sans-serif;
 }
 
 body {
   margin: 0;
   color: #333;
   font-size: 64px;
-  animation: fadein .2s;
+  animation: fadein 0.2s;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  user-select: none
+  user-select: none;
 }
 
 @keyframes fadein {
   0% {
-    opacity: 0
+    opacity: 0;
   }
 
   to {
-    opacity: 1
+    opacity: 1;
   }
 }
 
@@ -33,61 +33,61 @@ a {
   padding: 16px 0;
   color: inherit;
   text-decoration: none;
-  align-items: center
+  align-items: center;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  min-height: 100vh
+  min-height: 100vh;
 }
 
 footer {
   display: flex;
   padding: 16px;
-  font-size: 18px
+  font-size: 18px;
 }
 
 .flex {
   display: flex;
-  flex-grow: 1
+  flex-grow: 1;
 }
 
 .form,
 input {
-  width: 100%
+  width: 100%;
 }
 
 input {
   padding: 16px 32px;
   color: inherit;
-  font-size: inherit
+  font-size: inherit;
 }
 
 ::placeholder {
-  color: #b2b2b2
+  color: #b2b2b2;
 }
 
 ::selection {
   background-color: #000;
-  color: #fff
+  color: #fff;
 }
 
 #erbox {
   padding: 16px 32px;
   color: #f44336;
   animation: fadeout;
-  animation-fill-mode: forwards
+  animation-fill-mode: forwards;
 }
 
 #alias,
 #sucess {
   padding: 16px 32px;
-  color: #58de71
+  color: #58de71;
 }
 
 #qr {
-  padding: 16px
+  padding: 16px;
 }
 
 button {
@@ -97,16 +97,16 @@ button {
   text-align: left;
   font-size: inherit;
   cursor: pointer;
-  -webkit-text-fill-color: transparent
+  -webkit-text-fill-color: transparent;
 }
 
-@media (max-width:720px) {
+@media (max-width: 720px) {
   body {
-    font-size: 32px
+    font-size: 32px;
   }
 
   footer {
-    flex-direction: column
+    flex-direction: column;
   }
 }
 
@@ -115,7 +115,7 @@ button {
   outline: 0;
   border: 0;
   font-weight: 700;
-  font-family: 'Asap', sans-serif;
+  font-family: "Asap", sans-serif;
 }
 
 /*Global Variables*/
@@ -145,8 +145,8 @@ body {
   color: var(--font-color);
   margin: 0;
   font-size: 64px;
-  animation: fadein .8s;
-  transition: background-color .5s ease;
+  animation: fadein 0.8s;
+  transition: background-color 0.5s ease;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
@@ -155,7 +155,7 @@ body {
 
 h1 {
   color: var(--head-color);
-  transition: color .5s ease;
+  transition: color 0.5s ease;
 }
 
 @keyframes fadein {
@@ -173,7 +173,7 @@ a {
   margin: 0 16px;
   padding: 16px 0;
   color: var(--accent);
-  transition: color .5s ease;
+  transition: color 0.5s ease;
   text-decoration: none;
   align-items: center;
 }
@@ -186,7 +186,7 @@ a {
 
 footer {
   color: var(--accent);
-  transition: color .5s ease;
+  transition: color 0.5s ease;
   display: flex;
   padding: 16px;
   font-size: 18px;
@@ -199,7 +199,7 @@ footer {
 
 .form {
   background-color: var(--bg-color);
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
   width: 100%;
 }
 
@@ -207,7 +207,7 @@ input {
   background-color: var(--bg-color);
   padding: 16px 32px;
   width: 100%;
-  transition: background-color .5s ease;
+  transition: background-color 0.5s ease;
   color: var(--font-color);
   font-size: inherit;
 }
@@ -230,12 +230,12 @@ input {
 
 #alias {
   padding: 16px 32px;
-  color: #58DE71;
+  color: #58de71;
 }
 
 #sucess {
   padding: 16px 32px;
-  color: #58DE71;
+  color: #58de71;
 }
 
 #qr {
@@ -245,7 +245,7 @@ input {
 button {
   padding: 16px 32px;
   background: var(--gradient);
-  transition: background .5s ease;
+  transition: background 0.5s ease;
   background-size: 300% 300%;
   animation: grad 8s ease infinite;
   -webkit-background-clip: text;
@@ -309,7 +309,7 @@ button {
   position: absolute;
   right: 0;
   top: 0;
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .slider:before {
@@ -320,16 +320,16 @@ button {
   width: 26px;
   content: "";
   position: absolute;
-  transition: .4s;
+  transition: 0.4s;
   box-shadow: 7px 7px 0 0 #fff;
   transform: rotate(135deg);
 }
 
-input:checked+.slider {
+input:checked + .slider {
   background-color: var(--accent);
 }
 
-input:checked+.slider:before {
+input:checked + .slider:before {
   /*Circle*/
   left: 4px;
   bottom: 4px;
@@ -359,7 +359,7 @@ input:checked+.slider:before {
 /* Copyright */
 #copyright {
   color: var(--accent);
-  transition: color .5s ease;
+  transition: color 0.5s ease;
   font-size: 18px;
 }
 

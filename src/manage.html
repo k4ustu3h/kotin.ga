@@ -8,15 +8,15 @@
         content="IE=edge">
   <meta name="viewport"
         content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
-  <title>kotinga - Kotinga is a modern URL shortener with support for custom alias</title>
+  <title>kotinga - Manage</title>
   <meta name="description"
-        content="Kotinga is a modern URL shortener with support for custom alias">
+        content="Manage">
   <link rel="icon"
         href="assets/images/favicon.ico">
   <meta itemprop="name"
         content="kotinga">
   <meta itemprop="description"
-        content="Kotinga is a modern URL shortener with support for custom alias">
+        content="Manage">
   <meta itemprop="image"
         content="assets/images/icon-192x192.png">
   <!-- See https://goo.gl/OOhYW5 -->
@@ -69,7 +69,7 @@
   <meta property="og:title"
         content="kotinga">
   <meta property="og:description"
-        content="Kotinga is a modern URL shortener with support for custom alias">
+        content="Manage">
   <meta property="og:image"
         content="assets/images/icon-144x144.png">
   <!-- Twitter -->
@@ -84,7 +84,7 @@
   <meta name="twitter:title"
         content="kotinga">
   <meta name="twitter:description"
-        content="Kotinga is a modern URL shortener with support for custom alias">
+        content="Manage">
   <meta name="twitter:image"
         content="assets/images/icon-144x144.png">
   <!-- Web Fonts -->
@@ -96,9 +96,30 @@
 
 <body>
   <main class="main">
-    <div id="erbox">
-      <h1>404</h1>
-      page not found
+    <form class="form"
+          action="javascript:void(0);">
+      <input type="text"
+             maxlength="20"
+             id="key"
+             placeholder="alias"
+             label="alias"
+             required>
+      <button id="dbtn"
+              type="submit"
+              aria-label="Shorten">
+        <span id="status">delete</span>
+      </button>
+    </form>
+    <div id="erbox"></div>
+    <div class="form"
+         id="output"
+         style="display: none">
+      <div id="alias"></div>
+      <input type="text"
+             id="shortenedURL"
+             placeholder="Output"
+             label="short url">
+      <div id="sucess"></div>
     </div>
     <div class="flex"></div>
     <footer>
@@ -175,6 +196,7 @@
       </a>
     </footer>
   </main>
+  <script src="assets/js/manage.js"></script>
   <script src="assets/js/pwa.js"></script>
 </body>
 

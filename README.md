@@ -34,9 +34,9 @@
 
 ## Built with
 
--   HTML - For the web framework
--   CSS - For styling components
--   **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
+- HTML - For the web framework
+- CSS - For styling components
+- **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
 
 ---
 
@@ -50,15 +50,15 @@ This project is developed by [Liyas Thomas](https://github.com/liyasthomas) usin
 
 ### Lead Developers
 
--   [**Liyas Thomas**](https://github.com/liyasthomas) - _Author_
+- [**Liyas Thomas**](https://github.com/liyasthomas) - _Author_
 
 ### Testing and Debugging
 
--   [Liyas Thomas](https://github.com/liyasthomas)
+- [Liyas Thomas](https://github.com/liyasthomas)
 
 ### Contributors
 
--   [Contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors)
+- [Contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors)
 
 See also the list of [contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors) who participated in this project.
 
@@ -72,4 +72,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Acknowledgments
 
--   Hat tip to anyone who's code was used
+- Hat tip to anyone who's code was used
