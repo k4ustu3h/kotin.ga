@@ -1,14 +1,14 @@
 [![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg?style=for-the-badge)](https://github.com/liyasthomas/mnmlurl/releases/latest)
 [![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg?style=for-the-badge)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
 
-# <img src="assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
+# <img src="src/assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
 ### :link: Kotinga is a fork of the modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
 
 <div align="center">
   <br>
-  <img src="assets/images/screely.png" alt="kotinga" width="100%">
-  <img src="assets/images/screely2.png" alt="kotinga" width="100%">
+  <img src="src/assets/images/screely.png" alt="kotinga" width="100%">
+  <img src="src/assets/images/screely2.png" alt="kotinga" width="100%">
   <br>
 </div>
 
@@ -34,9 +34,9 @@
 
 ## Built with
 
-- HTML - For the web framework
-- CSS - For styling components
-- **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
+-   HTML - For the web framework
+-   CSS - For styling components
+-   **[Chromium](https://github.com/chromium/chromium)** - Thanks for being so fast!
 
 ---
 
@@ -50,15 +50,15 @@ This project is developed by [Liyas Thomas](https://github.com/liyasthomas) usin
 
 ### Lead Developers
 
-- [**Liyas Thomas**](https://github.com/liyasthomas) - _Author_
+-   [**Liyas Thomas**](https://github.com/liyasthomas) - _Author_
 
 ### Testing and Debugging
 
-- [Liyas Thomas](https://github.com/liyasthomas)
+-   [Liyas Thomas](https://github.com/liyasthomas)
 
 ### Contributors
 
-- [Contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors)
+-   [Contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors)
 
 See also the list of [contributors](https://github.com/liyasthomas/mnmlurl/graphs/contributors) who participated in this project.
 
@@ -72,4 +72,4 @@ This project is licensed under the [MIT License](https://opensource.org/licenses
 
 ## Acknowledgments
 
-- Hat tip to anyone who's code was used
+-   Hat tip to anyone who's code was used
