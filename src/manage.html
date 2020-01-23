@@ -1,203 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <script src="assets/js/head.js"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no"
+    />
+    <title>kotinga - Manage</title>
+    <meta name="description" content="Manage" />
+    <link rel="icon" href="assets/images/favicon.ico" />
+    <meta itemprop="name" content="kotinga" />
+    <meta itemprop="description" content="Manage" />
+    <meta itemprop="image" content="assets/images/icon-192x192.png" />
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="manifest.json" />
+    <!-- See https://goo.gl/qRE0vM -->
+    <meta name="theme-color" content="#ff0000" />
+    <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="kotinga" />
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="white-translucent"
+    />
+    <meta name="apple-mobile-web-app-title" content="kotinga" />
+    <!-- Homescreen icons -->
+    <link rel="apple-touch-icon" href="assets/images/icon-48x48.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="assets/images/icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="96x96"
+      href="assets/images/icon-96x96.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="assets/images/icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="192x192"
+      href="assets/images/icon-192x192.png"
+    />
+    <!-- Tile icon for Windows 8 (144x144 + tile color) -->
+    <meta
+      name="msapplication-TileImage"
+      content="assets/images/icon-144x144.png"
+    />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <!-- OpenGraph -->
+    <meta property="og:site_name" content="kotinga" />
+    <meta property="og:url" content="https://kotin.ga" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="kotinga" />
+    <meta property="og:description" content="Manage" />
+    <meta property="og:image" content="assets/images/icon-144x144.png" />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@liyasthomas" />
+    <meta name="twitter:creator" content="@liyasthomas" />
+    <meta name="twitter:url" content="https://kotin.ga" />
+    <meta name="twitter:title" content="kotinga" />
+    <meta name="twitter:description" content="Manage" />
+    <meta name="twitter:image" content="assets/images/icon-144x144.png" />
+    <!-- Web Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Asap:700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/index.css" />
+  </head>
 
-<head>
-  <script src="assets/js/head.js"></script>
-  <meta charset='utf-8'>
-  <meta http-equiv="X-UA-Compatible"
-        content="IE=edge">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1, minimum-scale=1, shrink-to-fit=no">
-  <title>kotinga - Manage</title>
-  <meta name="description"
-        content="Manage">
-  <link rel="icon"
-        href="assets/images/favicon.ico">
-  <meta itemprop="name"
-        content="kotinga">
-  <meta itemprop="description"
-        content="Manage">
-  <meta itemprop="image"
-        content="assets/images/icon-192x192.png">
-  <!-- See https://goo.gl/OOhYW5 -->
-  <link rel="manifest"
-        href="manifest.json">
-  <!-- See https://goo.gl/qRE0vM -->
-  <meta name="theme-color"
-        content="#ff0000">
-  <!-- Add to homescreen for Chrome on Android. Fallback for manifest.json -->
-  <meta name="mobile-web-app-capable"
-        content="yes">
-  <meta name="application-name"
-        content="kotinga">
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable"
-        content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style"
-        content="white-translucent">
-  <meta name="apple-mobile-web-app-title"
-        content="kotinga">
-  <!-- Homescreen icons -->
-  <link rel="apple-touch-icon"
-        href="assets/images/icon-48x48.png">
-  <link rel="apple-touch-icon"
-        sizes="72x72"
-        href="assets/images/icon-72x72.png">
-  <link rel="apple-touch-icon"
-        sizes="96x96"
-        href="assets/images/icon-96x96.png">
-  <link rel="apple-touch-icon"
-        sizes="144x144"
-        href="assets/images/icon-144x144.png">
-  <link rel="apple-touch-icon"
-        sizes="192x192"
-        href="assets/images/icon-192x192.png">
-  <!-- Tile icon for Windows 8 (144x144 + tile color) -->
-  <meta name="msapplication-TileImage"
-        content="assets/images/icon-144x144.png">
-  <meta name="msapplication-TileColor"
-        content="#ffffff">
-  <meta name="msapplication-tap-highlight"
-        content="no">
-  <!-- OpenGraph -->
-  <meta property="og:site_name"
-        content="kotinga">
-  <meta property="og:url"
-        content="https://kotin.ga">
-  <meta property="og:type"
-        content="website">
-  <meta property="og:title"
-        content="kotinga">
-  <meta property="og:description"
-        content="Manage">
-  <meta property="og:image"
-        content="assets/images/icon-144x144.png">
-  <!-- Twitter -->
-  <meta name="twitter:card"
-        content="summary">
-  <meta name="twitter:site"
-        content="@liyasthomas">
-  <meta name="twitter:creator"
-        content="@liyasthomas">
-  <meta name="twitter:url"
-        content="https://kotin.ga">
-  <meta name="twitter:title"
-        content="kotinga">
-  <meta name="twitter:description"
-        content="Manage">
-  <meta name="twitter:image"
-        content="assets/images/icon-144x144.png">
-  <!-- Web Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Asap:700&display=swap"
-        rel="stylesheet">
-  <link rel="stylesheet"
-        href="assets/css/index.css">
-</head>
-
-<body>
-  <main class="main">
-    <form class="form"
-          action="javascript:void(0);">
-      <input type="text"
-             maxlength="20"
-             id="key"
-             placeholder="alias"
-             label="alias"
-             required>
-      <button id="dbtn"
-              type="submit"
-              aria-label="Shorten">
-        <span id="status">delete</span>
-      </button>
-    </form>
-    <div id="erbox"></div>
-    <div class="form"
-         id="output"
-         style="display: none">
-      <div id="alias"></div>
-      <input type="text"
-             id="shortenedURL"
-             placeholder="Output"
-             label="short url">
-      <div id="sucess"></div>
-    </div>
-    <div class="flex"></div>
-    <footer>
-      <a href="./">
-        <svg width="28"
-             height="28"
-             viewBox="8 0 360 360"
-             xml:space="preserve">
-          <path id="svg"
-                d="M302.93,149.794c5.561-6.116,5.024-15.49-1.199-20.932L164.63,8.898   c-6.223-5.442-16.2-5.328-22.292,0.257L4.771,135.258c-6.092,5.585-6.391,14.947-0.662,20.902l3.449,3.592   c5.722,5.955,14.971,6.665,20.645,1.581l10.281-9.207v134.792c0,8.27,6.701,14.965,14.965,14.965h53.624   c8.264,0,14.965-6.695,14.965-14.965v-94.3h68.398v94.3c-0.119,8.264,5.794,14.959,14.058,14.959h56.828   c8.264,0,14.965-6.695,14.965-14.965V154.024c0,0,2.84,2.488,6.343,5.567c3.497,3.073,10.842,0.609,16.403-5.513L302.93,149.794z" />
-        </svg>
-        Home
-      </a>
-      <a href="https://github.com/liyasthomas/mnmlurl-extension"
-         target="_blank"
-         rel="noopener">
-        <svg width="32"
-             height="32"
-             viewBox="-6 -32 640 640"
-             xml:space="preserve">
-          <path id="svg"
-                d="M471.75,255H433.5V153c0-28.05-22.95-51-51-51h-102V63.75C280.5,28.05,252.45,0,216.75,0S153,28.05,153,63.75V102H51    c-28.05,0-51,22.95-51,51v96.9h38.25c38.25,0,68.85,30.6,68.85,68.85S76.5,387.6,38.25,387.6H0v96.9c0,28.05,22.95,51,51,51h96.9    v-38.25c0-38.25,30.6-68.85,68.85-68.85s68.85,30.6,68.85,68.85v38.25h96.9c28.05,0,51-22.95,51-51v-102h38.25    c35.7,0,63.75-28.05,63.75-63.75S507.45,255,471.75,255z" />
-        </svg>
-        Get browser extension
-      </a>
-      <a href="https://github.com/k4ustu3h/kotin.ga"
-         target="_blank"
-         rel="noopener">
-        <svg width="32"
-             height="32"
-             viewBox="0 0 25 24"
-             fill="none"
-             xmlns="http://www.w3.org/2000/svg">
-          <path id="svg"
-                d="M 8.9,0.1 C 4.3,0.6 0.6,4.3 0.1,8.8 -0.4,13.5 2.3,17.7 6.4,19.3 6.7,19.4 7,19.2 7,18.8 v -1.6 c 0,0 -0.4,0.1 -0.9,0.1 C 4.7,17.3 4.1,16.1 4,15.4 3.9,15 3.7,14.7 3.4,14.4 3.1,14.3 3,14.3 3,14.2 3,14 3.3,14 3.4,14 4,14 4.5,14.7 4.7,15 5.2,15.8 5.8,16 6.1,16 6.5,16 6.8,15.9 7,15.8 7.1,15.1 7.4,14.4 8,14 5.7,13.5 4,12.2 4,10 4,8.9 4.5,7.8 5.2,7 5.1,6.8 5,6.3 5,5.6 5,5.2 5,4.6 5.3,4 5.3,4 6.7,4 8.1,5.3 8.6,5.1 9.3,5 10,5 10.7,5 11.4,5.1 12,5.3 13.3,4 14.8,4 14.8,4 15,4.6 15,5.2 15,5.6 15,6.4 14.9,6.8 14.8,7 c 0.7,0.8 1.2,1.8 1.2,3 0,2.2 -1.7,3.5 -4,4 0.6,0.5 1,1.4 1,2.3 v 2.6 c 0,0.3 0.3,0.6 0.7,0.5 3.7,-1.5 6.3,-5.1 6.3,-9.3 0,-6 -5.1,-10.7 -11.1,-10 z" />
-        </svg>
-        GitHub
-      </a>
-      <button id="installPWA"
-              onclick="installPWA()"
-              style="padding: 16px;">
-        <svg width="48"
-             height="18.072049180328"
-             viewBox="0 0 1952.00 734.93">
-          <g>
-            <path id="pwa"
-                  d="M 1436.62,603.304L 1493.01,460.705L 1655.83,460.705L 1578.56,244.39L 1675.2,0.000528336L 1952,734.933L 1747.87,734.933L 1700.57,603.304L 1436.62,603.304 Z " />
-            <path id="svg"
-                  d="M 1262.47,734.935L 1558.79,0.00156593L 1362.34,0.0025425L 1159.64,474.933L 1015.5,0.00351906L 864.499,0.00351906L 709.731,474.933L 600.585,258.517L 501.812,562.819L 602.096,734.935L 795.427,734.935L 935.284,309.025L 1068.63,734.935L 1262.47,734.935 Z " />
-            <path id="pwa"
-                  d="M 186.476,482.643L 307.479,482.643C 344.133,482.643 376.772,478.552 405.396,470.37L 436.689,373.962L 524.148,104.516C 517.484,93.9535 509.876,83.9667 501.324,74.5569C 456.419,24.852 390.719,0.000406265 304.222,0.000406265L -3.8147e-006,0.000406265L -3.8147e-006,734.933L 186.476,734.933L 186.476,482.643 Z M 346.642,169.079C 364.182,186.732 372.951,210.355 372.951,239.95C 372.951,269.772 365.238,293.424 349.813,310.906C 332.903,330.331 301.766,340.043 256.404,340.043L 186.476,340.043L 186.476,142.598L 256.918,142.598C 299.195,142.598 329.103,151.425 346.642,169.079 Z " />
-          </g>
-        </svg>
-      </button>
-      <div class="flex"></div>
-      <!--Dark Mode-->
-      <div class="theme-switch-wrapper">
-        <label class="theme-switch"
-               for="checkbox">
-          <input type="checkbox"
-                 id="checkbox" />
-          <div class="slider round"></div>
-        </label>
+  <body>
+    <main class="main">
+      <form class="form" action="javascript:void(0);">
+        <input
+          type="text"
+          maxlength="20"
+          id="key"
+          placeholder="alias"
+          label="alias"
+          required
+        />
+        <button id="dbtn" type="submit" aria-label="Shorten">
+          <span id="status">delete</span>
+        </button>
+      </form>
+      <div id="erbox"></div>
+      <div class="form" id="output" style="display: none">
+        <div id="alias"></div>
+        <input
+          type="text"
+          id="shortenedURL"
+          placeholder="Output"
+          label="short url"
+        />
+        <div id="sucess"></div>
       </div>
-      <script src=assets/js/darkmode.js>
-              </script>
-              <a
-              id="copyright"
-              href="https://k4ustu3h.cf">
-        <!---
-        -->
-      <span id=copyright_img>K_</span>
-      &copy;2019
-      </a>
-    </footer>
-  </main>
-  <script src="assets/js/manage.js"></script>
-  <script src="assets/js/pwa.js"></script>
-</body>
-
+      <div class="flex"></div>
+      <footer>
+        <a href="./">
+          <svg
+            width="28"
+            height="28"
+            viewBox="8 0 360 360"
+            xml:space="preserve"
+          >
+            <path
+              id="svg"
+              d="M302.93,149.794c5.561-6.116,5.024-15.49-1.199-20.932L164.63,8.898   c-6.223-5.442-16.2-5.328-22.292,0.257L4.771,135.258c-6.092,5.585-6.391,14.947-0.662,20.902l3.449,3.592   c5.722,5.955,14.971,6.665,20.645,1.581l10.281-9.207v134.792c0,8.27,6.701,14.965,14.965,14.965h53.624   c8.264,0,14.965-6.695,14.965-14.965v-94.3h68.398v94.3c-0.119,8.264,5.794,14.959,14.058,14.959h56.828   c8.264,0,14.965-6.695,14.965-14.965V154.024c0,0,2.84,2.488,6.343,5.567c3.497,3.073,10.842,0.609,16.403-5.513L302.93,149.794z"
+            />
+          </svg>
+          Home
+        </a>
+        <a
+          href="https://github.com/liyasthomas/mnmlurl-extension"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="32"
+            height="32"
+            viewBox="-6 -32 640 640"
+            xml:space="preserve"
+          >
+            <path
+              id="svg"
+              d="M471.75,255H433.5V153c0-28.05-22.95-51-51-51h-102V63.75C280.5,28.05,252.45,0,216.75,0S153,28.05,153,63.75V102H51    c-28.05,0-51,22.95-51,51v96.9h38.25c38.25,0,68.85,30.6,68.85,68.85S76.5,387.6,38.25,387.6H0v96.9c0,28.05,22.95,51,51,51h96.9    v-38.25c0-38.25,30.6-68.85,68.85-68.85s68.85,30.6,68.85,68.85v38.25h96.9c28.05,0,51-22.95,51-51v-102h38.25    c35.7,0,63.75-28.05,63.75-63.75S507.45,255,471.75,255z"
+            />
+          </svg>
+          Get browser extension
+        </a>
+        <a
+          href="https://github.com/k4ustu3h/kotin.ga"
+          target="_blank"
+          rel="noopener"
+        >
+          <svg
+            width="32"
+            height="32"
+            viewBox="0 0 25 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              id="svg"
+              d="M 8.9,0.1 C 4.3,0.6 0.6,4.3 0.1,8.8 -0.4,13.5 2.3,17.7 6.4,19.3 6.7,19.4 7,19.2 7,18.8 v -1.6 c 0,0 -0.4,0.1 -0.9,0.1 C 4.7,17.3 4.1,16.1 4,15.4 3.9,15 3.7,14.7 3.4,14.4 3.1,14.3 3,14.3 3,14.2 3,14 3.3,14 3.4,14 4,14 4.5,14.7 4.7,15 5.2,15.8 5.8,16 6.1,16 6.5,16 6.8,15.9 7,15.8 7.1,15.1 7.4,14.4 8,14 5.7,13.5 4,12.2 4,10 4,8.9 4.5,7.8 5.2,7 5.1,6.8 5,6.3 5,5.6 5,5.2 5,4.6 5.3,4 5.3,4 6.7,4 8.1,5.3 8.6,5.1 9.3,5 10,5 10.7,5 11.4,5.1 12,5.3 13.3,4 14.8,4 14.8,4 15,4.6 15,5.2 15,5.6 15,6.4 14.9,6.8 14.8,7 c 0.7,0.8 1.2,1.8 1.2,3 0,2.2 -1.7,3.5 -4,4 0.6,0.5 1,1.4 1,2.3 v 2.6 c 0,0.3 0.3,0.6 0.7,0.5 3.7,-1.5 6.3,-5.1 6.3,-9.3 0,-6 -5.1,-10.7 -11.1,-10 z"
+            />
+          </svg>
+          GitHub
+        </a>
+        <button id="installPWA" onclick="installPWA()" style="padding: 16px;">
+          <svg width="48" height="18.072049180328" viewBox="0 0 1952.00 734.93">
+            <g>
+              <path
+                id="pwa"
+                d="M 1436.62,603.304L 1493.01,460.705L 1655.83,460.705L 1578.56,244.39L 1675.2,0.000528336L 1952,734.933L 1747.87,734.933L 1700.57,603.304L 1436.62,603.304 Z "
+              />
+              <path
+                id="svg"
+                d="M 1262.47,734.935L 1558.79,0.00156593L 1362.34,0.0025425L 1159.64,474.933L 1015.5,0.00351906L 864.499,0.00351906L 709.731,474.933L 600.585,258.517L 501.812,562.819L 602.096,734.935L 795.427,734.935L 935.284,309.025L 1068.63,734.935L 1262.47,734.935 Z "
+              />
+              <path
+                id="pwa"
+                d="M 186.476,482.643L 307.479,482.643C 344.133,482.643 376.772,478.552 405.396,470.37L 436.689,373.962L 524.148,104.516C 517.484,93.9535 509.876,83.9667 501.324,74.5569C 456.419,24.852 390.719,0.000406265 304.222,0.000406265L -3.8147e-006,0.000406265L -3.8147e-006,734.933L 186.476,734.933L 186.476,482.643 Z M 346.642,169.079C 364.182,186.732 372.951,210.355 372.951,239.95C 372.951,269.772 365.238,293.424 349.813,310.906C 332.903,330.331 301.766,340.043 256.404,340.043L 186.476,340.043L 186.476,142.598L 256.918,142.598C 299.195,142.598 329.103,151.425 346.642,169.079 Z "
+              />
+            </g>
+          </svg>
+        </button>
+        <div class="flex"></div>
+        <!--Dark Mode-->
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+        </div>
+        <script src="assets/js/darkmode.js"></script>
+        <a id="copyright" href="https://k4ustu3h.cf">
+          <span id="copyright_img">K_</span>
+          &copy;2019
+        </a>
+      </footer>
+    </main>
+    <script src="assets/js/manage.js"></script>
+    <script src="assets/js/pwa.js"></script>
+  </body>
 </html>
