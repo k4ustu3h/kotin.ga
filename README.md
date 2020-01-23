@@ -1,5 +1,10 @@
-[![GitHub release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg?style=for-the-badge)](https://github.com/liyasthomas/mnmlurl/releases/latest)
-[![license](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg?style=for-the-badge)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
+![Build Status](https://img.shields.io/travis/k4ustu3h/kotin.ga?style=for-the-badge)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
+![Dependency Status](https://img.shields.io/david/k4ustu3h/kotin.ga?style=for-the-badge)
+![devDependencies Status](https://img.shields.io/david/dev/k4ustu3h/kotin.ga?style=for-the-badge)
+[![GitHub Release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg?style=for-the-badge)](https://github.com/liyasthomas/mnmlurl/releases/latest)
+[![License](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg?style=for-the-badge)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
+![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/k4ustu3h/kotin.ga?style=for-the-badge)
 
 # <img src="src/assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
