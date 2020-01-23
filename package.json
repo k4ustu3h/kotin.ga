@@ -38,6 +38,7 @@
     "gulp-postcss": "^8.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
+    "snyk": "1.279.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {
