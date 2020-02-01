@@ -1,10 +1,9 @@
-![Build Status](https://img.shields.io/travis/k4ustu3h/kotin.ga?style=for-the-badge)
+[![Build Status](https://img.shields.io/travis/k4ustu3h/kotin.ga?style=for-the-badge)](https://travis-ci.org/k4ustu3h/kotin.ga)
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
-![Dependency Status](https://img.shields.io/david/k4ustu3h/kotin.ga?style=for-the-badge)
-![devDependencies Status](https://img.shields.io/david/dev/k4ustu3h/kotin.ga?style=for-the-badge)
+[![Dependency Status](https://img.shields.io/david/k4ustu3h/kotin.ga?style=for-the-badge)](https://david-dm.org/k4ustu3h/kotin.ga/)
+[![devDependencies Status](https://img.shields.io/david/dev/k4ustu3h/kotin.ga?style=for-the-badge)](https://david-dm.org/k4ustu3h/kotin.ga/?type=dev)
 [![GitHub Release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg?style=for-the-badge)](https://github.com/liyasthomas/mnmlurl/releases/latest)
-[![License](https://img.shields.io/github/license/liyasthomas/mnmlurl.svg?style=for-the-badge)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
-![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/k4ustu3h/kotin.ga?style=for-the-badge)
+[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/k4ustu3h/kotin.ga?style=for-the-badge)](https://snyk.io/test/github/k4ustu3h/kotin.ga?targetFile=package.json)
 
 # <img src="src/assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
@@ -71,10 +70,19 @@ See also the list of [contributors](https://github.com/liyasthomas/mnmlurl/graph
 
 ## License
 
-This project is licensed under the [MIT License](https://opensource.org/licenses/MIT) - see the [LICENSE](LICENSE) file for details.
+[![License](https://img.shields.io/github/license/k4ustu3h/kotin.ga.svg?style=for-the-badge)](https://github.com/k4ustu3h/kotin.ga/blob/master/LICENSE)
 
 ---
 
 ## Acknowledgments
 
 -   Hat tip to anyone who's code was used
+-   [mnmlurl](https://github.com/liyasthomas/mnmlurl) made by [Liyas Thomas](https://github.com/liyasthomas)
+
+---
+
+[![JavaScript](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/topics/javascript)
+[![HTML](https://forthebadge.com/images/badges/uses-html.svg)](https://github.com/topics/html)
+[![CSS](https://forthebadge.com/images/badges/uses-css.svg)](https://github.com/topics/css)
+[![h9rbs.js](https://forthebadge.com/images/badges/uses-h9rbs.svg)](https://html9responsiveboilerstrapjs.com/)
+[![Electricity](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
