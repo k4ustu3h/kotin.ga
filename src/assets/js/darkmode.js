@@ -1,4 +1,4 @@
-// Dark Mode
+// Dark Mode Switch
 
 // Event handlers
 
@@ -30,9 +30,7 @@ function switchTheme(e) {
 
 // Check for saved user preference, if any, on load of the website
 
-const currentTheme = localStorage.getItem("theme")
-  ? localStorage.getItem("theme")
-  : null;
+const currentTheme = localStorage.getItem("theme");
 
 if (currentTheme) {
   document.documentElement.setAttribute("data-theme", currentTheme);
