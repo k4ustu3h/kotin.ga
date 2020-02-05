@@ -2,12 +2,18 @@ dist: bionic
 language: node_js
 node_js:
   - 11
+addons:
+  chrome: stable
 cache:
   directories:
     - node_modules
+before_install:
+  - npm install -g @lhci/cli@0.3.x
 script:
   - npm run build
   - npm run prettier
+after_success:
+  - lhci autorun --upload.target=temporary-public-storage
 deploy:
   provider: pages:git
   token: $GITHUB_TOKEN

@@ -30,8 +30,6 @@
 
 :zap: **Performance**: kotinga is a thin web app on top of HTML, CSS and JavaScript. Being a Progressive web app, kotinga offers lightning fast loading and offline support via workbox and service worker.
 
-:information_desk_person: **Browser extension**: Get mnmlurl [Chrome browser extension](https://github.com/liyasthomas/mnmlurl-extension)
-
 <span style="color:red;">**IMPORTANT: Kotinga is an experimental project. Don't shorten sensitive contents/URLs with it. jsonstore.io endpoints are always public making shortened URLs visible for everyone.**</span>
 
 ---

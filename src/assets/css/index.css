@@ -1,39 +1,39 @@
 * {
-  box-sizing: border-box;
-  outline: 0;
   border: 0;
+  box-sizing: border-box;
+  font-family: "Asap", sans-serif;
   font-weight: 700;
-  font-family: Poppins, Roboto, Noto, sans-serif;
+  outline: 0;
 }
 
 body {
-  margin: 0;
-  color: #333;
+  animation: fadein 0.8s;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   font-size: 64px;
-  animation: fadein 0.2s;
+  margin: 0;
+  transition: background-color 0.5s ease;
+  user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
   -webkit-tap-highlight-color: transparent;
   -webkit-touch-callout: none;
   -webkit-user-select: none;
-  user-select: none;
 }
 
-@keyframes fadein {
-  0% {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
+h1 {
+  color: var(--head-color);
+  transition: color 0.5s ease;
 }
 
 a {
+  align-items: center;
+  color: var(--accent);
   display: inline-flex;
   margin: 0 16px;
   padding: 16px 0;
-  color: inherit;
   text-decoration: none;
-  align-items: center;
+  transition: color 0.5s ease;
 }
 
 .main {
@@ -43,9 +43,11 @@ a {
 }
 
 footer {
+  color: var(--accent);
   display: flex;
-  padding: 16px;
   font-size: 18px;
+  padding: 16px;
+  transition: color 0.5s ease;
 }
 
 .flex {
@@ -53,50 +55,57 @@ footer {
   flex-grow: 1;
 }
 
-.form,
-input {
+.form {
+  background-color: var(--bg-color);
+  transition: background-color 0.5s ease;
   width: 100%;
 }
 
 input {
-  padding: 16px 32px;
-  color: inherit;
+  background-color: var(--bg-color);
+  color: var(--font-color);
   font-size: inherit;
+  padding: 16px 32px;
+  transition: background-color 0.5s ease;
+  width: 100%;
 }
 
 ::placeholder {
-  color: #b2b2b2;
+  color: var(--font-color);
 }
 
 ::selection {
   background-color: #000;
-  color: #fff;
+  color: #00bb33;
 }
 
-#erbox {
-  padding: 16px 32px;
-  color: #f44336;
+.erbox {
   animation: fadeout;
   animation-fill-mode: forwards;
-}
-
-#alias,
-#sucess {
+  color: #f44336;
   padding: 16px 32px;
-  color: #58de71;
 }
 
-#qr {
+.alias,
+.sucess {
+  color: #58de71;
+  padding: 16px 32px;
+}
+
+.qr {
   padding: 16px;
 }
 
 button {
-  padding: 16px 32px;
-  background: linear-gradient(120deg, #12c2e9, #c471ed, #f64f59);
-  -webkit-background-clip: text;
-  text-align: left;
-  font-size: inherit;
+  animation: grad 8s ease infinite;
+  background: var(--gradient);
+  background-size: 300% 300%;
   cursor: pointer;
+  font-size: inherit;
+  padding: 16px 32px;
+  text-align: left;
+  transition: background 0.5s ease;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -108,14 +117,6 @@ button {
   footer {
     flex-direction: column;
   }
-}
-
-* {
-  box-sizing: border-box;
-  outline: 0;
-  border: 0;
-  font-weight: 700;
-  font-family: "Asap", sans-serif;
 }
 
 /*Global Variables*/
@@ -140,135 +141,6 @@ button {
   --gradient: linear-gradient(270deg, #009bef, #c471ed, #ff0000);
 }
 
-body {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  margin: 0;
-  font-size: 64px;
-  animation: fadein 0.8s;
-  transition: background-color 0.5s ease;
-  -webkit-tap-highlight-color: transparent;
-  -webkit-touch-callout: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-h1 {
-  color: var(--head-color);
-  transition: color 0.5s ease;
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-a {
-  display: inline-flex;
-  margin: 0 16px;
-  padding: 16px 0;
-  color: var(--accent);
-  transition: color 0.5s ease;
-  text-decoration: none;
-  align-items: center;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-
-footer {
-  color: var(--accent);
-  transition: color 0.5s ease;
-  display: flex;
-  padding: 16px;
-  font-size: 18px;
-}
-
-.flex {
-  display: flex;
-  flex-grow: 1;
-}
-
-.form {
-  background-color: var(--bg-color);
-  transition: background-color 0.5s ease;
-  width: 100%;
-}
-
-input {
-  background-color: var(--bg-color);
-  padding: 16px 32px;
-  width: 100%;
-  transition: background-color 0.5s ease;
-  color: var(--font-color);
-  font-size: inherit;
-}
-
-::placeholder {
-  color: var(--font-color);
-}
-
-::selection {
-  background-color: #000;
-  color: #00bb33;
-}
-
-#erbox {
-  padding: 16px 32px;
-  color: #f44336;
-  animation: fadeout;
-  animation-fill-mode: forwards;
-}
-
-#alias {
-  padding: 16px 32px;
-  color: #58de71;
-}
-
-#sucess {
-  padding: 16px 32px;
-  color: #58de71;
-}
-
-#qr {
-  padding: 16px;
-}
-
-button {
-  padding: 16px 32px;
-  background: var(--gradient);
-  transition: background 0.5s ease;
-  background-size: 300% 300%;
-  animation: grad 8s ease infinite;
-  -webkit-background-clip: text;
-  text-align: left;
-  font-size: inherit;
-  cursor: pointer;
-  -webkit-text-fill-color: transparent;
-}
-
-@keyframes grad {
-  0% {
-    background-position: 0% 50%;
-  }
-
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 @media all and (max-width: 720px) {
   body {
     font-size: 32px;
@@ -280,14 +152,10 @@ button {
 }
 
 /*Simple css to style it like a toggle switch*/
-.theme-switch-wrapper {
-  display: flex;
-  align-items: center;
 
-  em {
-    margin-left: 10px;
-    font-size: 1rem;
-  }
+.theme-switch-wrapper {
+  align-items: center;
+  display: flex;
 }
 
 .theme-switch {
@@ -312,32 +180,32 @@ button {
   transition: 0.4s;
 }
 
+/* Crescent */
 .slider:before {
-  /*Crescent*/
-  left: 14px;
   bottom: 4px;
-  height: 26px;
-  width: 26px;
-  content: "";
-  position: absolute;
-  transition: 0.4s;
   box-shadow: 7px 7px 0 0 #fff;
+  content: "";
+  height: 26px;
+  left: 14px;
+  position: absolute;
   transform: rotate(135deg);
+  transition: 0.4s;
+  width: 26px;
 }
 
 input:checked + .slider {
   background-color: var(--accent);
 }
 
+/* Circle */
 input:checked + .slider:before {
-  /*Circle*/
-  left: 4px;
-  bottom: 4px;
   background-color: #fff;
-  height: 26px;
-  width: 26px;
+  bottom: 4px;
   box-shadow: 0px 0px 0 0 #fff;
+  height: 26px;
+  left: 4px;
   transform: translateX(26px);
+  width: 26px;
 }
 
 .slider.round {
@@ -348,33 +216,50 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
-#svg {
-  fill: var(--accent);
-}
-
-#pwa {
+.p-a {
   fill: var(--pwa-color);
 }
 
-/* Copyright */
-#copyright {
-  color: var(--accent);
-  transition: color 0.5s ease;
-  font-size: 18px;
+.w {
+  fill: var(--accent);
 }
 
-#copyright_img {
+/* Copyright */
+
+.copyright {
+  color: var(--accent);
+  font-size: 18px;
+  transition: color 0.5s ease;
+}
+
+.copyright_img {
+  animation: grad 8s ease infinite;
   background: linear-gradient(90deg, #009bef, #ff0000);
-  transition: background 0.5s ease;
   background-size: 300% 300%;
-  animation: copyright 8s ease infinite;
-  -webkit-background-clip: text;
-  font-size: 24px;
   font-family: "Asap Condensed", sans-serif;
+  font-size: 24px;
+  transition: background 0.5s ease;
+  -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-@keyframes copyright {
+/* Iconify */
+
+.iconify {
+  font-size: 32px;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grad {
   0% {
     background-position: 0% 50%;
   }
