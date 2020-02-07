@@ -18,6 +18,13 @@ body {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
 }
+h1 {
+  color: var(--head-color);
+}
+a,
+h1 {
+  transition: color 0.5s ease;
+}
 a {
   align-items: center;
   color: var(--accent);
@@ -25,7 +32,6 @@ a {
   margin: 0 16px;
   padding: 16px 0;
   text-decoration: none;
-  transition: color 0.5s ease;
 }
 .main {
   display: flex;
@@ -44,17 +50,6 @@ footer {
   display: flex;
   flex-grow: 1;
 }
-.form,
-input {
-  background-color: var(--bg-color);
-  transition: background-color 0.5s ease;
-  width: 100%;
-}
-input {
-  color: var(--font-color);
-  font-size: inherit;
-  padding: 16px 32px;
-}
 ::placeholder {
   color: var(--font-color);
 }
@@ -66,23 +61,14 @@ input {
   animation: fadeout;
   animation-fill-mode: forwards;
   color: #f44336;
-  padding: 16px 32px;
 }
-#alias,
-#sucess {
-  color: #58de71;
+#erbox,
+button {
   padding: 16px 32px;
-}
-#qr {
-  padding: 16px;
 }
 button {
-  animation: grad 8s ease infinite;
-  background: var(--gradient);
-  background-size: 300% 300%;
   cursor: pointer;
   font-size: inherit;
-  padding: 16px 32px;
   text-align: left;
   transition: background 0.5s ease;
   -webkit-background-clip: text;
@@ -95,7 +81,6 @@ button {
   --bg-color: #000;
   --head-color: #bdbdbd;
   --pwa-color: #fff;
-  --gradient: linear-gradient(270deg, red, #c471ed, #009bef);
 }
 [data-theme="light"] {
   --accent: #009bef;
@@ -104,7 +89,6 @@ button {
   --bg-color: #fff;
   --head-color: #757575;
   --pwa-color: #3d3d3d;
-  --gradient: linear-gradient(270deg, #009bef, #c471ed, red);
 }
 @media (max-width: 720px) {
   body {
