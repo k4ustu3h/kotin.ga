@@ -4,7 +4,7 @@
   "description": "Minimal URL is a modern URL shortener with support for custom alias",
   "main": "index.js",
   "scripts": {
-    "clean": "rm -rf ./dist/*",
+    "clean": "rm -rf ./dist",
     "build": "gulp build",
     "packit": "gulp packit",
     "snyk-protect": "snyk protect",
@@ -38,14 +38,14 @@
     "gulp-postcss": "^8.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-zip": "^5.0.1",
-    "snyk": "1.290.1",
+    "snyk": "1.290.2",
     "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.4",
     "@babel/plugin-transform-runtime": "^7.8.3",
     "eslint": "^6.8.0",
-    "prettier": "1.19.1"
+    "prettier": "^1.19.1"
   },
   "snyk": true
 }

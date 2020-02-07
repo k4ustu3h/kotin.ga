@@ -1,13 +1,13 @@
-let gulp = require("gulp");
+let babel = require("gulp-babel");
 let browserify = require("browserify");
+let cssnano = require("cssnano");
+let del = require("del");
+let gulp = require("gulp");
 let htmlmin = require("gulp-htmlmin");
 let postcss = require("gulp-postcss");
-let cssnano = require("cssnano");
-let uglify = require("gulp-uglify");
-let babel = require("gulp-babel");
-let del = require("del");
-let zip = require("gulp-zip");
 let source = require("vinyl-source-stream");
+let uglify = require("gulp-uglify");
+let zip = require("gulp-zip");
 const compress = () =>
   gulp
     .src("dist/*")
@@ -18,9 +18,7 @@ const pre_js = () =>
     .src([
       "src/assets/js/head.js",
       "src/assets/js/index.js",
-      "src/assets/js/manage.js",
-      "src/assets/js/pwa.js",
-      "src/sw.js"
+      "src/assets/js/manage.js"
     ])
     .pipe(
       babel({
@@ -46,13 +44,13 @@ const m_html = () =>
 const m_css = () => {
   const plugins = [cssnano()];
   return gulp
-    .src("src/assets/css/index.css")
+    .src("src/assets/css/*")
     .pipe(postcss(plugins))
     .pipe(gulp.dest("dist/assets/css/"));
 };
 const m_js = () =>
   gulp
-    .src(["comp/head.js", "comp/index.js", "comp/manage.js", "comp/pwa.js"])
+    .src(["comp/head.js", "comp/index.js", "comp/manage.js"])
     .pipe(
       uglify({
         compress: {
@@ -64,7 +62,13 @@ const m_js = () =>
 const copy_extras = () =>
   gulp
     .src(
-      ["src/manifest.json", "src/assets/images*", "src/assets/js/darkmode.js"],
+      [
+        "src/assets/images*",
+        "src/assets/js/darkmode.js",
+        "src/assets/js/pwa.js",
+        "src/assets/js/sw.js",
+        "src/manifest.json"
+      ],
       {
         base: "src"
       }
@@ -74,13 +78,13 @@ const clean = () => del(["./comp"]);
 const bundleindex = () =>
   browserify(["dist/assets/js/index.js"])
     .bundle()
-    .pipe(source("assets/js/index.js"))
-    .pipe(gulp.dest("dist/assets/js/"));
+    .pipe(source("index.js"))
+    .pipe(gulp.dest("dist/assets/js"));
 const bundlemanage = () =>
   browserify(["dist/assets/js/manage.js"])
     .bundle()
     .pipe(source("manage.js"))
-    .pipe(gulp.dest("dist"));
+    .pipe(gulp.dest("dist/assets/js"));
 gulp.task("html", m_html);
 gulp.task("css", m_css);
 gulp.task("js", m_js);

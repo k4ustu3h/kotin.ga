@@ -7,7 +7,7 @@
 
 # <img src="src/assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
 
-### :link: Kotinga is a fork of the modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
+## :link: Kotinga is a fork of the modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
 
 <div align="center">
   <br>
@@ -16,7 +16,7 @@
   <br>
 </div>
 
-### Features :sparkles:
+## Features :sparkles:
 
 :heart_eyes: **URL shortning made simple**: kotinga uses [jsonstore.io](https://www.jsonstore.io) to store data on an endpoint JSON file using HTTPS requests. It works on any url.
 

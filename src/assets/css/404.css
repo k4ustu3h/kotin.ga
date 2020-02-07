@@ -20,6 +20,11 @@ body {
   -webkit-user-select: none;
 }
 
+h1 {
+  color: var(--head-color);
+  transition: color 0.5s ease;
+}
+
 a {
   align-items: center;
   color: var(--accent);
@@ -50,21 +55,6 @@ footer {
   flex-grow: 1;
 }
 
-.form {
-  background-color: var(--bg-color);
-  transition: background-color 0.5s ease;
-  width: 100%;
-}
-
-input {
-  background-color: var(--bg-color);
-  color: var(--font-color);
-  font-size: inherit;
-  padding: 16px 32px;
-  transition: background-color 0.5s ease;
-  width: 100%;
-}
-
 ::placeholder {
   color: var(--font-color);
 }
@@ -81,20 +71,7 @@ input {
   padding: 16px 32px;
 }
 
-#alias,
-#sucess {
-  color: #58de71;
-  padding: 16px 32px;
-}
-
-#qr {
-  padding: 16px;
-}
-
 button {
-  animation: grad 8s ease infinite;
-  background: var(--gradient);
-  background-size: 300% 300%;
   cursor: pointer;
   font-size: inherit;
   padding: 16px 32px;
@@ -122,7 +99,6 @@ button {
   --bg-color: #000;
   --head-color: #bdbdbd;
   --pwa-color: #fff;
-  --gradient: linear-gradient(270deg, #ff0000, #c471ed, #009bef);
 }
 
 /*Light Mode Variables*/
@@ -133,7 +109,6 @@ button {
   --bg-color: #fff;
   --head-color: #757575;
   --pwa-color: #3d3d3d;
-  --gradient: linear-gradient(270deg, #009bef, #c471ed, #ff0000);
 }
 
 @media all and (max-width: 720px) {
