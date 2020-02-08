@@ -45,6 +45,7 @@ workbox.precaching.precacheAndRoute([
   {
     url: "/index.html",
     url: "/manage.html",
+    url: "/404.html",
     revision: "383676"
   }
 ]);

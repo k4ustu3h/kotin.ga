@@ -54,6 +54,7 @@ input {
   color: var(--font-color);
   font-size: inherit;
   padding: 16px 32px;
+  font-family: Manrope, sans-serif;
 }
 ::placeholder {
   color: var(--font-color);
@@ -90,19 +91,15 @@ button {
 }
 :root {
   --accent: #900;
-  --sec-color: #fff;
   --font-color: #bdbdbd;
   --bg-color: #000;
-  --head-color: #bdbdbd;
   --pwa-color: #fff;
   --gradient: linear-gradient(270deg, red, #c471ed, #009bef);
 }
 [data-theme="light"] {
   --accent: #009bef;
-  --sec-color: #000;
   --font-color: #757575;
   --bg-color: #fff;
-  --head-color: #757575;
   --pwa-color: #3d3d3d;
   --gradient: linear-gradient(270deg, #009bef, #c471ed, red);
 }
