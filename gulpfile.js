@@ -18,7 +18,8 @@ const pre_js = () =>
     .src([
       "src/assets/js/head.js",
       "src/assets/js/index.js",
-      "src/assets/js/manage.js"
+      "src/assets/js/manage.js",
+      "src/assets/js/pwa.js"
     ])
     .pipe(
       babel({
@@ -50,7 +51,7 @@ const m_css = () => {
 };
 const m_js = () =>
   gulp
-    .src(["comp/head.js", "comp/index.js", "comp/manage.js"])
+    .src(["comp/head.js", "comp/index.js", "comp/manage.js", "comp/pwa.js"])
     .pipe(
       uglify({
         compress: {
@@ -65,7 +66,6 @@ const copy_extras = () =>
       [
         "src/assets/images*",
         "src/assets/js/darkmode.js",
-        "src/assets/js/pwa.js",
         "src/assets/js/sw.js",
         "src/manifest.json"
       ],
