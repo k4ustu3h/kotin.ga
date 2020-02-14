@@ -72,7 +72,7 @@ input {
 
 ::selection {
   background-color: #000;
-  color: #00bb33;
+  color: #0b3;
 }
 
 #erbox {
@@ -115,22 +115,22 @@ button {
   }
 }
 
-/*Global Variables*/
+/* Global Variables */
 :root {
-  --accent: #990000;
+  --accent: #b31818;
   --font-color: #bdbdbd;
   --bg-color: #000;
   --pwa-color: #fff;
-  --gradient: linear-gradient(270deg, #ff0000, #c471ed, #009bef);
+  --gradient: linear-gradient(270deg, #b31818, #c471ed, #009bef);
 }
 
-/*Light Mode Variables*/
+/* Light Mode Variables */
 [data-theme="light"] {
   --accent: #009bef;
   --font-color: #757575;
   --bg-color: #fff;
   --pwa-color: #3d3d3d;
-  --gradient: linear-gradient(270deg, #009bef, #c471ed, #ff0000);
+  --gradient: linear-gradient(270deg, #009bef, #c471ed, #b31818);
 }
 
 @media all and (max-width: 720px) {
@@ -143,7 +143,7 @@ button {
   }
 }
 
-/*Simple css to style it like a toggle switch*/
+/* Simple css to style it like a toggle switch */
 
 .theme-switch-wrapper {
   align-items: center;
@@ -173,7 +173,7 @@ button {
 }
 
 /* Crescent */
-.slider:before {
+.slider::before {
   bottom: 4px;
   box-shadow: 7px 7px 0 0 #fff;
   content: "";
@@ -190,10 +190,10 @@ input:checked + .slider {
 }
 
 /* Circle */
-input:checked + .slider:before {
+input:checked + .slider::before {
   background-color: #fff;
   bottom: 4px;
-  box-shadow: 0px 0px 0 0 #fff;
+  box-shadow: 0 0 0 0 #fff;
   height: 26px;
   left: 4px;
   transform: translateX(26px);
@@ -204,7 +204,7 @@ input:checked + .slider:before {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
 }
 
@@ -226,7 +226,7 @@ input:checked + .slider:before {
 
 .copyright_img {
   animation: grad 8s ease infinite;
-  background: linear-gradient(90deg, #009bef, #ff0000);
+  background: linear-gradient(90deg, #009bef, #f00);
   background-size: 300% 300%;
   font-family: "Asap Condensed", sans-serif;
   font-size: 24px;

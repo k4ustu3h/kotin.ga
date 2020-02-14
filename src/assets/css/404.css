@@ -36,20 +36,20 @@ h1 {
   transition: color 0.5s ease;
 }
 
-h1:before,
-h1:after {
+h1::before,
+h1::after {
   content: attr(title);
   position: absolute;
   left: 0;
 }
 
-h1:before {
+h1::before {
   animation: glitchTop 1s linear infinite;
   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
 }
 
-h1:after {
+h1::after {
   animation: glitchBotom 1.5s linear infinite;
   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
   -webkit-clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
@@ -77,7 +77,7 @@ footer {
 
 ::selection {
   background-color: #000;
-  color: #00bb33;
+  color: #0b3;
 }
 
 .erbox {
@@ -107,15 +107,15 @@ button {
   }
 }
 
-/*Global Variables*/
+/* Global Variables */
 :root {
-  --accent: #990000;
+  --accent: #900;
   --bg-color: #000;
   --head-color: #bdbdbd;
   --pwa-color: #fff;
 }
 
-/*Light Mode Variables*/
+/* Light Mode Variables */
 [data-theme="light"] {
   --accent: #009bef;
   --bg-color: #fff;
@@ -133,7 +133,7 @@ button {
   }
 }
 
-/*Simple css to style it like a toggle switch*/
+/* Simple css to style it like a toggle switch */
 
 .theme-switch-wrapper {
   align-items: center;
@@ -163,7 +163,7 @@ button {
 }
 
 /* Crescent */
-.slider:before {
+.slider::before {
   bottom: 4px;
   box-shadow: 7px 7px 0 0 #fff;
   content: "";
@@ -180,10 +180,10 @@ input:checked + .slider {
 }
 
 /* Circle */
-input:checked + .slider:before {
+input:checked + .slider::before {
   background-color: #fff;
   bottom: 4px;
-  box-shadow: 0px 0px 0 0 #fff;
+  box-shadow: 0 0 0 0 #fff;
   height: 26px;
   left: 4px;
   transform: translateX(26px);
@@ -194,7 +194,7 @@ input:checked + .slider:before {
   border-radius: 34px;
 }
 
-.slider.round:before {
+.slider.round::before {
   border-radius: 50%;
 }
 
@@ -216,7 +216,7 @@ input:checked + .slider:before {
 
 .copyright_img {
   animation: grad 8s ease infinite;
-  background: linear-gradient(90deg, #009bef, #ff0000);
+  background: linear-gradient(90deg, #009bef, #f00);
   background-size: 300% 300%;
   font-family: "Asap Condensed", sans-serif;
   font-size: 24px;
@@ -260,10 +260,12 @@ input:checked + .slider:before {
   64% {
     transform: translate(2px, 0) skew(0deg);
   }
+
   4%,
   60% {
     transform: translate(-2px, 0) skew(0deg);
   }
+
   62% {
     transform: translate(0, 0) skew(5deg);
   }
@@ -274,10 +276,12 @@ input:checked + .slider:before {
   64% {
     transform: translate(2px, -2px);
   }
+
   4%,
   60% {
     transform: translate(-2px, 2px);
   }
+
   62% {
     transform: translate(13px, -1px) skew(-13deg);
   }
@@ -288,10 +292,12 @@ input:checked + .slider:before {
   64% {
     transform: translate(-2px, 0);
   }
+
   4%,
   60% {
     transform: translate(-2px, 0);
   }
+
   62% {
     transform: translate(-22px, 5px) skew(21deg);
   }
