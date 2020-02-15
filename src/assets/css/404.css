@@ -84,17 +84,9 @@ footer {
   animation: fadeout;
   animation-fill-mode: forwards;
   color: #000;
-  color: #f44336;
+  color: #900;
   font-family: "Manrope", monospace;
   padding: 16px 32px;
-}
-
-button {
-  cursor: pointer;
-  padding: 16px 32px;
-  text-align: left;
-  transition: background 0.5s ease;
-  -webkit-background-clip: text;
 }
 
 @media (max-width: 720px) {
@@ -109,10 +101,9 @@ button {
 
 /* Global Variables */
 :root {
-  --accent: #900;
+  --accent: #b31818;
   --bg-color: #000;
   --head-color: #bdbdbd;
-  --pwa-color: #fff;
 }
 
 /* Light Mode Variables */
@@ -120,7 +111,6 @@ button {
   --accent: #009bef;
   --bg-color: #fff;
   --head-color: #757575;
-  --pwa-color: #3d3d3d;
 }
 
 @media all and (max-width: 720px) {
@@ -198,14 +188,6 @@ input:checked + .slider::before {
   border-radius: 50%;
 }
 
-.p-a {
-  fill: var(--pwa-color);
-}
-
-.w {
-  fill: var(--accent);
-}
-
 /* Copyright */
 
 .copyright {
@@ -216,7 +198,7 @@ input:checked + .slider::before {
 
 .copyright_img {
   animation: grad 8s ease infinite;
-  background: linear-gradient(90deg, #009bef, #f00);
+  background: linear-gradient(90deg, #009bef, #b31818);
   background-size: 300% 300%;
   font-family: "Asap Condensed", sans-serif;
   font-size: 24px;
