@@ -29,12 +29,7 @@ const pre_js = () =>
     .pipe(gulp.dest("comp"));
 const m_html = () =>
   gulp
-    .src([
-      "src/404.html",
-      "src/index.html",
-      "src/manage.html",
-      "src/offline.html"
-    ])
+    .src(["src/404.html", "src/index.html", "src/manage.html"])
     .pipe(
       htmlmin({
         collapseWhitespace: true
@@ -61,12 +56,9 @@ const m_js = () =>
     .pipe(gulp.dest("dist/assets/js/"));
 const copy_extras = () =>
   gulp
-    .src(
-      ["src/assets/images*", "src/assets/js/darkmode.js", "src/manifest.json"],
-      {
-        base: "src"
-      }
-    )
+    .src(["src/assets/images*", "src/assets/js/darkmode.js"], {
+      base: "src"
+    })
     .pipe(gulp.dest("dist"));
 const clean = () => del(["./comp"]);
 const bundleindex = () =>
