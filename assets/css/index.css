@@ -66,7 +66,7 @@ input {
 #erbox {
   animation: fadeout;
   animation-fill-mode: forwards;
-  color: #f44336;
+  color: #900;
   padding: 16px 32px;
 }
 #alias,
@@ -93,14 +93,12 @@ button {
   --accent: #b31818;
   --font-color: #bdbdbd;
   --bg-color: #000;
-  --pwa-color: #fff;
   --gradient: linear-gradient(270deg, #b31818, #c471ed, #009bef);
 }
 [data-theme="light"] {
   --accent: #009bef;
   --font-color: #757575;
   --bg-color: #fff;
-  --pwa-color: #3d3d3d;
   --gradient: linear-gradient(270deg, #009bef, #c471ed, #b31818);
 }
 @media (max-width: 720px) {
@@ -164,12 +162,6 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.p-a {
-  fill: var(--pwa-color);
-}
-.w {
-  fill: var(--accent);
-}
 .copyright {
   color: var(--accent);
   font-size: 18px;
@@ -177,7 +169,7 @@ input:checked + .slider:before {
 }
 .copyright_img {
   animation: grad 8s ease infinite;
-  background: linear-gradient(90deg, #009bef, red);
+  background: linear-gradient(90deg, #009bef, #b31818);
   background-size: 300% 300%;
   font-family: Asap Condensed, sans-serif;
   font-size: 24px;
