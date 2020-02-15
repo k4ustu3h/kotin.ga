@@ -1,11 +1,12 @@
-[![Build Status](https://img.shields.io/travis/k4ustu3h/kotin.ga?style=for-the-badge)](https://travis-ci.org/k4ustu3h/kotin.ga)
+[![Codacy grade](https://img.shields.io/codacy/grade/91a6faae94c2402da74967e5004d48f0?logo=codacy&style=for-the-badge)](https://www.codacy.com/manual/k4ustu3h/kotin.ga)
+[![Build Status](https://img.shields.io/travis/com/k4ustu3h/kotin.ga?logo=travis&style=for-the-badge)](https://travis-ci.com/k4ustu3h/kotin.ga)
 [![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
 [![Dependency Status](https://img.shields.io/david/k4ustu3h/kotin.ga?style=for-the-badge)](https://david-dm.org/k4ustu3h/kotin.ga/)
 [![devDependencies Status](https://img.shields.io/david/dev/k4ustu3h/kotin.ga?style=for-the-badge)](https://david-dm.org/k4ustu3h/kotin.ga/?type=dev)
 [![GitHub Release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg?style=for-the-badge)](https://github.com/liyasthomas/mnmlurl/releases/latest)
-[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/k4ustu3h/kotin.ga?style=for-the-badge)](https://snyk.io/test/github/k4ustu3h/kotin.ga?targetFile=package.json)
+[![Snyk Vulnerabilities for GitHub Repo](https://img.shields.io/snyk/vulnerabilities/github/k4ustu3h/kotin.ga?logo=snyk&style=for-the-badge)](https://snyk.io/test/github/k4ustu3h/kotin.ga?targetFile=package.json)
 
-# <img src="src/assets/images/icon-48x48.png" alt="kotinga" width="32"> kotinga
+# kotinga
 
 ## :link: Kotinga is a fork of the modern URL shortener with support for custom alias by [Liyas Thomas](https://github.com/liyasthomas)
 
@@ -28,7 +29,7 @@
 
 :alembic: **Manage URLs**: Delete already created alias to update/create new URLs.
 
-:zap: **Performance**: kotinga is a thin web app on top of HTML, CSS and JavaScript. Being a Progressive web app, kotinga offers lightning fast loading and offline support via workbox and service worker.
+:zap: **Performance**: kotinga is a thin web app on top of HTML, CSS and JavaScript.
 
 <span style="color:red;">**IMPORTANT: Kotinga is an experimental project. Don't shorten sensitive contents/URLs with it. jsonstore.io endpoints are always public making shortened URLs visible for everyone.**</span>
 
