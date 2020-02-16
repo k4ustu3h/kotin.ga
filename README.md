@@ -1,6 +1,7 @@
-[![Codacy grade](https://img.shields.io/codacy/grade/91a6faae94c2402da74967e5004d48f0?logo=codacy&style=for-the-badge)](https://www.codacy.com/manual/k4ustu3h/kotin.ga)
 [![Build Status](https://img.shields.io/travis/com/k4ustu3h/kotin.ga?logo=travis&style=for-the-badge)](https://travis-ci.com/k4ustu3h/kotin.ga)
-[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=for-the-badge)](https://github.com/prettier/prettier)
+[![Codacy grade](https://img.shields.io/codacy/grade/91a6faae94c2402da74967e5004d48f0?logo=codacy&style=for-the-badge)](https://www.codacy.com/manual/k4ustu3h/kotin.ga)
+[![Code Style: Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?logo=prettier&style=for-the-badge)](https://github.com/prettier/prettier)
+[![Dependabot](https://img.shields.io/badge/dependabot-active-025E8C?logo=dependabot&style=for-the-badge)](https://dependabot.com/)
 [![Dependency Status](https://img.shields.io/david/k4ustu3h/kotin.ga?style=for-the-badge)](https://david-dm.org/k4ustu3h/kotin.ga/)
 [![devDependencies Status](https://img.shields.io/david/dev/k4ustu3h/kotin.ga?style=for-the-badge)](https://david-dm.org/k4ustu3h/kotin.ga/?type=dev)
 [![GitHub Release](https://img.shields.io/github/release/liyasthomas/mnmlurl/all.svg?style=for-the-badge)](https://github.com/liyasthomas/mnmlurl/releases/latest)
@@ -80,8 +81,7 @@ See also the list of [contributors](https://github.com/liyasthomas/mnmlurl/graph
 
 ---
 
-[![JavaScript](https://forthebadge.com/images/badges/made-with-javascript.svg)](https://github.com/topics/javascript)
-[![HTML](https://forthebadge.com/images/badges/uses-html.svg)](https://github.com/topics/html)
-[![CSS](https://forthebadge.com/images/badges/uses-css.svg)](https://github.com/topics/css)
-[![h9rbs.js](https://forthebadge.com/images/badges/uses-h9rbs.svg)](https://html9responsiveboilerstrapjs.com/)
-[![Electricity](https://forthebadge.com/images/badges/powered-by-electricity.svg)](https://forthebadge.com)
+[![CSS](https://img.shields.io/badge/uses-css-1572B6?logo=css3&style=for-the-badge)](https://github.com/topics/css)
+[![h9rbs.js](https://img.shields.io/badge/uses-h9rbs.js-473349?style=for-the-badge)](https://html9responsiveboilerstrapjs.com/)
+[![HTML](https://img.shields.io/badge/uses-html-E34F26?logo=html5&style=for-the-badge)](https://github.com/topics/html)
+[![JavaScript](https://img.shields.io/badge/made_with-javascript-F7DF1E?logo=javascript&style=for-the-badge)](https://github.com/topics/javascript)
