@@ -18,7 +18,7 @@ const pre_js = () =>
     .src([
       "src/assets/js/head.js",
       "src/assets/js/index.js",
-      "src/assets/js/manage.js"
+      "src/assets/js/delete.js"
     ])
     .pipe(
       babel({
@@ -29,7 +29,7 @@ const pre_js = () =>
     .pipe(gulp.dest("comp"));
 const m_html = () =>
   gulp
-    .src(["src/404.html", "src/index.html", "src/manage.html"])
+    .src(["src/404.html", "src/index.html", "src/delete.html"])
     .pipe(
       htmlmin({
         collapseWhitespace: true
@@ -45,7 +45,7 @@ const m_css = () => {
 };
 const m_js = () =>
   gulp
-    .src(["comp/head.js", "comp/index.js", "comp/manage.js"])
+    .src(["comp/head.js", "comp/index.js", "comp/delete.js"])
     .pipe(
       uglify({
         compress: {
@@ -66,10 +66,10 @@ const bundleindex = () =>
     .bundle()
     .pipe(source("index.js"))
     .pipe(gulp.dest("dist/assets/js"));
-const bundlemanage = () =>
-  browserify(["dist/assets/js/manage.js"])
+const bundledelete = () =>
+  browserify(["dist/assets/js/delete.js"])
     .bundle()
-    .pipe(source("manage.js"))
+    .pipe(source("delete.js"))
     .pipe(gulp.dest("dist/assets/js"));
 gulp.task("html", m_html);
 gulp.task("css", m_css);
@@ -79,7 +79,7 @@ gulp.task("clean", clean);
 gulp.task("copy_extras", copy_extras);
 gulp.task("compress", compress);
 gulp.task("bundleindex", bundleindex);
-gulp.task("bundlemanage", bundlemanage);
+gulp.task("bundledelete", bundledelete);
 gulp.task(
   "build",
   gulp.series(
@@ -88,7 +88,7 @@ gulp.task(
     "pre_js",
     "js",
     "bundleindex",
-    "bundlemanage",
+    "bundledelete",
     "copy_extras",
     "clean"
   )
