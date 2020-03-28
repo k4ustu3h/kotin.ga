@@ -1,0 +1,85 @@
+@font-face {
+  font-family: Manrope VF;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/variable/Manrope[wght].ttf)
+    format("truetype-variations");
+  font-style: normal;
+  font-weight: 200 800;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/manrope-extrabold.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/manrope-extrabold.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 800;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/manrope-bold.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/manrope-bold.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/manrope-semibold.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/manrope-semibold.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/manrope-medium.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/manrope-medium.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 500;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/manrope-regular.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/manrope-regular.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/manrope-light.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/manrope-light.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(https://github.com/sharanda/manrope/raw/master/fonts/web/Manrope-ExtraLight.woff2)
+      format("woff2"),
+    url(https://github.com/sharanda/manrope/raw/master/fonts/otf/Manrope-ExtraLight.otf)
+      format("opentype");
+  font-style: normal;
+  font-weight: 200;
+}
+body,
+html {
+  font-family: Manrope VF, Manrope, sans-serif;
+  font-weight: 500;
+  font-variation-settings: "wght" 500;
+  font-variation-ligatures: normal;
+  font-feature-settings: "calt", "liga";
+}
+*,
+:after,
+:before {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
