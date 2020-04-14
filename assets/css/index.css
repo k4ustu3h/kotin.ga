@@ -1,14 +1,35 @@
+@font-face {
+  font-family: Manrope VF;
+  src: url(/assets/fonts/variable/Manrope%5Bwght%5D.ttf)
+    format("truetype-variations");
+  font-style: normal;
+  font-weight: 200 800;
+}
+@font-face {
+  font-family: Manrope;
+  src: url(/assets/fonts/web/manrope-bold.woff2) format("woff2"),
+    url(/assets/fonts/otf/manrope-bold.otf) format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
 * {
   border: 0;
   box-sizing: border-box;
-  font-weight: 700;
+  font-smoothing: antialiased;
   outline: 0;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
 }
-body {
+body,
+html {
   animation: fadein 0.8s;
   background-color: var(--bg-color);
+  font-family: Manrope VF, Manrope, sans-serif;
+  font-feature-settings: "calt", "liga";
   font-size: 64px;
-  font-family: Manrope, sans-serif;
+  font-variation-ligatures: normal;
+  font-variation-settings: "wght" 500;
+  font-weight: 700;
   margin: 0;
   transition: background-color 0.5s ease;
   user-select: none;
@@ -52,9 +73,13 @@ input {
 }
 input {
   color: var(--font-color);
+  font-family: Manrope VF, Manrope, sans-serif;
+  font-feature-settings: "calt", "liga";
   font-size: inherit;
+  font-variation-ligatures: normal;
+  font-variation-settings: "wght" 500;
+  font-weight: 700;
   padding: 16px 32px;
-  font-family: Manrope, sans-serif;
 }
 ::placeholder {
   color: var(--font-color);
@@ -82,7 +107,12 @@ button {
   background: var(--gradient);
   background-size: 300% 300%;
   cursor: pointer;
+  font-family: Manrope VF, Manrope, sans-serif;
+  font-feature-settings: "calt", "liga";
   font-size: inherit;
+  font-variation-ligatures: normal;
+  font-variation-settings: "wght" 500;
+  font-weight: 700;
   padding: 16px 32px;
   text-align: left;
   transition: background 0.5s ease;
