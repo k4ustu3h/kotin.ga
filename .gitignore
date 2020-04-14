@@ -83,3 +83,4 @@ typings/
 
 #Output
 dist/
+.sync.ffs_db

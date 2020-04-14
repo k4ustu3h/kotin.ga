@@ -9,21 +9,18 @@ let source = require("vinyl-source-stream");
 let uglify = require("gulp-uglify");
 let zip = require("gulp-zip");
 const compress = () =>
-  gulp
-    .src("dist/*")
-    .pipe(zip("package.zip"))
-    .pipe(gulp.dest("dist"));
+  gulp.src("dist/*").pipe(zip("package.zip")).pipe(gulp.dest("dist"));
 const pre_js = () =>
   gulp
     .src([
       "src/assets/js/head.js",
       "src/assets/js/index.js",
-      "src/assets/js/delete.js"
+      "src/assets/js/delete.js",
     ])
     .pipe(
       babel({
         plugins: ["@babel/transform-runtime"],
-        presets: ["@babel/preset-env"]
+        presets: ["@babel/preset-env"],
       })
     )
     .pipe(gulp.dest("comp"));
@@ -32,7 +29,7 @@ const m_html = () =>
     .src(["src/404.html", "src/index.html", "src/delete.html"])
     .pipe(
       htmlmin({
-        collapseWhitespace: true
+        collapseWhitespace: true,
       })
     )
     .pipe(gulp.dest("dist"));
@@ -49,16 +46,22 @@ const m_js = () =>
     .pipe(
       uglify({
         compress: {
-          unused: false
-        }
+          unused: false,
+        },
       })
     )
     .pipe(gulp.dest("dist/assets/js/"));
 const copy_extras = () =>
   gulp
-    .src(["src/assets/images*", "src/assets/js/darkmode.js"], {
-      base: "src"
-    })
+    .src(
+      [
+        "src/assets/fonts/**",
+        "src/assets/js/darkmode.js",
+      ],
+      {
+        base: "src",
+      }
+    )
     .pipe(gulp.dest("dist"));
 const clean = () => del(["./comp"]);
 const bundleindex = () =>

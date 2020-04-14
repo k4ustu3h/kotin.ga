@@ -13,8 +13,8 @@
 
 <div align="center">
   <br>
-  <img src="src/assets/images/screely.png" alt="kotinga" width="100%">
-  <img src="src/assets/images/screely2.png" alt="kotinga" width="100%">
+  <img src="images/screen.png" alt="kotinga" width="100%">
+  <img src="images/screen2.png" alt="kotinga" width="100%">
   <br>
 </div>
 
