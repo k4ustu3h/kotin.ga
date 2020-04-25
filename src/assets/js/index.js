@@ -53,7 +53,7 @@ const check_is_unique = () => {
     genhash();
   }
 };
-const copyer = containerid => {
+const copyer = (containerid) => {
   const elt = document.getElementById(containerid);
   if (document.selection) {
     // IE
@@ -79,9 +79,9 @@ const copyer = containerid => {
     }
   }
 };
-const createFrame = src =>
+const createFrame = (src) =>
   `<a href='${src}' target='_blank'><img src='${src}' alt='QR code'></a>`;
-const send_request = url => {
+const send_request = (url) => {
   const myurl = url;
   const address = `${endpoint}/${window.location.hash.substr(1)}`;
   pushJSON(address, myurl);
@@ -96,7 +96,7 @@ const send_request = url => {
     `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${shortenedURL.value}`
   );
 };
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
+const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 const shorturl = async () => {
   status.innerHTML = "shortening...";
   erbox.style.display = "none";

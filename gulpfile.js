@@ -53,15 +53,9 @@ const m_js = () =>
     .pipe(gulp.dest("dist/assets/js/"));
 const copy_extras = () =>
   gulp
-    .src(
-      [
-        "src/assets/fonts/**",
-        "src/assets/js/darkmode.js",
-      ],
-      {
-        base: "src",
-      }
-    )
+    .src(["src/assets/js/darkmode.js"], {
+      base: "src",
+    })
     .pipe(gulp.dest("dist"));
 const clean = () => del(["./comp"]);
 const bundleindex = () =>
