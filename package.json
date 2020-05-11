@@ -45,7 +45,7 @@
     "@babel/plugin-transform-runtime": "^7.9.0",
     "eslint": "^6.8.0",
     "prettier": "^2.0.5",
-    "snyk": "^1.311.0",
+    "snyk": "^1.320.2",
     "stylelint": "^13.3.3",
     "stylelint-config-prettier": "^8.0.1",
     "stylelint-config-standard": "^20.0.0",
