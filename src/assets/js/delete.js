@@ -12,7 +12,7 @@ const getkey = () => {
 };
 const delKey = (key, data) => {
   fetch(`${endpoint}/${key}`, {
-    method: "DELETE",
+    method: "DELETE"
   });
   keyinput.value = "";
   status.innerHTML = "delete";
@@ -34,7 +34,7 @@ const check_is_unique_alias = () => {
     erbox.innerHTML = "alias not found";
   }
 };
-const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
+const sleep = ms => new Promise(resolve => setTimeout(resolve, ms));
 const deleteurl = async () => {
   status.innerHTML = "deleting...";
   erbox.style.display = "none";

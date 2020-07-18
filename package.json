@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/liyasthomas/mnmlurl#readme",
   "dependencies": {
-    "@babel/preset-env": "7.9.5",
+    "@babel/preset-env": "7.10.4",
     "@babel/runtime": "7.9.2",
     "browserify": "16.5.1",
     "cssnano": "^4.1.10",
@@ -37,17 +37,17 @@
     "gulp-htmlmin": "^5.0.1",
     "gulp-postcss": "^8.0.0",
     "gulp-uglify": "^3.0.2",
-    "gulp-zip": "^5.0.1",
+    "gulp-zip": "5.0.2",
+    "snyk": "1.362.1",
     "vinyl-source-stream": "^2.0.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.9.0",
-    "@babel/plugin-transform-runtime": "^7.9.0",
-    "eslint": "^6.8.0",
+    "@babel/core": "7.10.5",
+    "@babel/plugin-transform-runtime": "7.10.5",
+    "eslint": "7.4.0",
     "prettier": "^2.0.5",
-    "snyk": "^1.311.0",
-    "stylelint": "^13.3.3",
-    "stylelint-config-prettier": "^8.0.1",
+    "stylelint": "13.6.1",
+    "stylelint-config-prettier": "8.0.2",
     "stylelint-config-standard": "^20.0.0",
     "stylelint-prettier": "^1.1.2"
   },

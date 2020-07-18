@@ -10,7 +10,7 @@ body,
 html {
   animation: fadein 0.8s;
   background-color: var(--bg-color);
-  font-family: "Manrope VF", Manrope, sans-serif;
+  font-family: "Manrope", sans-serif;
   font-feature-settings: "calt", "liga";
   font-size: 64px;
   font-variant-ligatures: normal;
