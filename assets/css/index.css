@@ -105,13 +105,13 @@ button {
   --accent: #b31818;
   --font-color: #bdbdbd;
   --bg-color: #000;
-  --gradient: linear-gradient(270deg, #b31818, #c471ed, #009bef);
+  --gradient: linear-gradient(90deg, #b31818, #c471ed, #009bef);
 }
 [data-theme="light"] {
   --accent: #009bef;
   --font-color: #757575;
   --bg-color: #fff;
-  --gradient: linear-gradient(270deg, #009bef, #c471ed, #b31818);
+  --gradient: linear-gradient(90deg, #009bef, #c471ed, #b31818);
 }
 @media (max-width: 720px) {
   body {
